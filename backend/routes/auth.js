@@ -86,6 +86,8 @@ router.post('/register', authenticate, requireAdmin, async (req, res) => {
     console.error('Register error:', err.message);
     res.status(500).json({ error: 'Internal server error.' });
   }
+});
+
 // ---------------------------------------------------------------------------
 // PUT /api/auth/profile
 // ---------------------------------------------------------------------------
