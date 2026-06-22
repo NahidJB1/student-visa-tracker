@@ -11,12 +11,24 @@ const inter = Inter({
 export const metadata = {
   title: 'SVT — Student Visa Tracker',
   description: 'Student Visa Processing & Financial Tracker — manage student applications, track visa status, and monitor earnings.',
+  manifest: '/manifest.json',
 };
+
+export const viewport = {
+  themeColor: '#0a0e1a',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
+import PwaRegistry from '@/components/PwaRegistry';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <body>
+        <PwaRegistry />
         <AuthProvider>
           {children}
         </AuthProvider>

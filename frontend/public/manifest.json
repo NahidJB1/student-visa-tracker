@@ -1,0 +1,17 @@
+{
+  "name": "Student Visa Tracker",
+  "short_name": "Visa Tracker",
+  "description": "Manage student visa applications and financials.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#6c5ce7",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
