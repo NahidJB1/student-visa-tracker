@@ -162,6 +162,7 @@ function ProcessingContent() {
               onFinancialsClick={handleFinancialsClick}
               onRefresh={handleRefresh}
             />
+            </>
           )}
         </div>
       </div>
