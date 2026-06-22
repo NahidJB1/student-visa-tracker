@@ -13,7 +13,12 @@ export default function Navbar() {
   const navLinks = [
     { href: '/dashboard', label: 'Dashboard', icon: '📊' },
     { href: '/processing', label: 'Processing', icon: '📋' },
+    { href: '/settings', label: 'Settings', icon: '⚙️' },
   ];
+
+  if (isAdmin) {
+    navLinks.push({ href: '/admin', label: 'Admin', icon: '🛡️' });
+  }
 
   return (
     <nav className="navbar">

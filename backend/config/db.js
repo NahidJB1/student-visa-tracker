@@ -73,6 +73,12 @@ async function initDb() {
       ADD COLUMN IF NOT EXISTS currency VARCHAR(10) DEFAULT 'RM';
     `);
 
+    // Migrate to support EMGS Hold remark
+    await pool.query(`
+      ALTER TABLE students 
+      ADD COLUMN IF NOT EXISTS emgs_hold_remark TEXT DEFAULT '';
+    `);
+
     console.log('Database tables verified.');
 
     // ---------------------------------------------------------------------------

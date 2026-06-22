@@ -25,12 +25,25 @@ export default function StatusDropdown({ student, onStatusChange }) {
     const newStatus = e.target.value;
     if (newStatus === student.processing_status) return;
 
+    let remark = undefined;
+    if (newStatus === 'EMGS Hold') {
+      const input = window.prompt("EMGS Hold Reason (Optional):");
+      if (input === null) {
+        // User cancelled the prompt, revert the dropdown
+        e.target.value = student.processing_status;
+        return;
+      }
+      remark = input.trim();
+    }
+
     setLoading(true);
     try {
-      await api.updateStudentStatus(student._id || student.id, newStatus);
+      await api.updateStudentStatus(student._id || student.id, newStatus, remark);
+      // Let the parent component know so it can refresh the data
       onStatusChange?.(student._id || student.id, newStatus);
     } catch (err) {
       console.error('Failed to update status:', err);
+      e.target.value = student.processing_status;
     } finally {
       setLoading(false);
     }

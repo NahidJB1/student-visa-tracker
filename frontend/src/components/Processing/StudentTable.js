@@ -244,6 +244,14 @@ export default function StudentTable({
                               {student.course_program || '—'}
                             </span>
                           </div>
+                          {student.processing_status === 'EMGS Hold' && student.emgs_hold_remark && (
+                            <div className="student-expand-item">
+                              <span className="student-expand-label" style={{ color: 'var(--error)' }}>Hold Reason</span>
+                              <span className="student-expand-value" style={{ color: 'var(--error)', fontWeight: 500 }}>
+                                {student.emgs_hold_remark}
+                              </span>
+                            </div>
+                          )}
                           <div className="student-expand-item">
                             <span className="student-expand-label">Created</span>
                             <span className="student-expand-value">

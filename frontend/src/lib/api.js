@@ -39,6 +39,16 @@ export const api = {
       method: 'POST',
       body: JSON.stringify(data),
     }),
+  updateProfile: (data) =>
+    apiRequest('/auth/profile', {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    }),
+  updatePassword: (data) =>
+    apiRequest('/auth/password', {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    }),
 
   // Students
   getStudents: (status) =>
@@ -48,10 +58,10 @@ export const api = {
       method: 'POST',
       body: JSON.stringify(data),
     }),
-  updateStudentStatus: (id, status) =>
+  updateStudentStatus: (id, status, emgs_hold_remark) =>
     apiRequest(`/students/${id}/status`, {
       method: 'PUT',
-      body: JSON.stringify({ status }),
+      body: JSON.stringify({ status, emgs_hold_remark }),
     }),
   deleteStudent: (id) =>
     apiRequest(`/students/${id}`, {
@@ -74,4 +84,7 @@ export const api = {
     apiRequest('/dashboard/status-distribution'),
   getEarningsTimeline: (period = '1m', currency = 'RM') =>
     apiRequest(`/dashboard/earnings-timeline?period=${period}&currency=${currency}`),
+
+  // Admin
+  getUsers: () => apiRequest('/admin/users'),
 };

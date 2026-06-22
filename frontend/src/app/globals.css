@@ -1551,8 +1551,8 @@ select.input-field {
   .modal-header,
   .modal-body,
   .modal-footer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1562,9 +1562,33 @@ select.input-field {
     align-items: stretch;
   }
 
-  .student-table th:nth-child(3),
-  .student-table td:nth-child(3) {
-    display: none;
+  /* Table responsiveness - allow horizontal scroll on mobile */
+  .student-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .student-table {
+    min-width: 600px;
+  }
+
+  /* Modals on mobile */
+  .modal-overlay {
+    padding: 16px;
+  }
+  .modal-content {
+    margin: 0;
+    width: 100%;
+    max-height: 90vh;
+  }
+
+  /* Dashboard mobile layout */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .earnings-grid {
+    grid-template-columns: 1fr;
   }
 }
 

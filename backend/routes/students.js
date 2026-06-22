@@ -129,7 +129,7 @@ router.put('/:id', async (req, res) => {
 router.put('/:id/status', async (req, res) => {
   try {
     const { id } = req.params;
-    const { status, processing_status } = req.body;
+    const { status, processing_status, emgs_hold_remark } = req.body;
     const newStatus = status || processing_status;
 
     if (!newStatus || !ALLOWED_STATUSES.includes(newStatus)) {
@@ -144,10 +144,17 @@ router.put('/:id/status', async (req, res) => {
       return res.status(404).json({ error: 'Student not found or access denied.' });
     }
 
-    await runQuery(
-      'UPDATE students SET processing_status = $1, updated_at = CURRENT_TIMESTAMP WHERE id = $2',
-      [newStatus, id]
-    );
+    if (emgs_hold_remark !== undefined) {
+      await runQuery(
+        'UPDATE students SET processing_status = $1, emgs_hold_remark = $2, updated_at = CURRENT_TIMESTAMP WHERE id = $3',
+        [newStatus, emgs_hold_remark, id]
+      );
+    } else {
+      await runQuery(
+        'UPDATE students SET processing_status = $1, updated_at = CURRENT_TIMESTAMP WHERE id = $2',
+        [newStatus, id]
+      );
+    }
 
     const updated = await queryOne('SELECT * FROM students WHERE id = $1', [id]);
     res.json({ student: updated });
