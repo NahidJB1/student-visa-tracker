@@ -30,9 +30,10 @@ function formatDate(dateStr) {
   });
 }
 
-function formatCurrency(value) {
-  if (value == null || isNaN(value)) return '$0.00';
-  return '$' + Number(value).toLocaleString('en-US', {
+function formatCurrency(value, currency = 'RM') {
+  if (value == null || isNaN(value)) return `${currency === 'BDT' ? '৳' : 'RM'} 0.00`;
+  const symbol = currency === 'BDT' ? '৳' : 'RM';
+  return `${symbol} ` + Number(value).toLocaleString('en-US', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });
@@ -153,7 +154,8 @@ export default function StudentTable({
               agent_commission: student.agent_commission,
               university_payment: student.university_payment,
               amount_from_student: student.amount_from_student,
-              extra_incomes: extraIncomes
+              extra_incomes: extraIncomes,
+              currency: student.currency || 'RM'
             } : null;
 
             let earnings = null;
@@ -273,7 +275,7 @@ export default function StudentTable({
                                     fontWeight: 700,
                                   }}
                                 >
-                                  {formatCurrency(earnings)}
+                                  {formatCurrency(earnings, fin.currency)}
                                 </span>
                               </div>
                               <div className="student-expand-item">
@@ -282,7 +284,7 @@ export default function StudentTable({
                                   className="student-expand-value"
                                   style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}
                                 >
-                                  Student: {formatCurrency(fin.amount_from_student)} − (Comm: {formatCurrency(fin.agent_commission)} + Uni: {formatCurrency(fin.university_payment)}) + Extra: {formatCurrency(totalExtraIncome)}
+                                  Student: {formatCurrency(fin.amount_from_student, fin.currency)} − (Comm: {formatCurrency(fin.agent_commission, fin.currency)} + Uni: {formatCurrency(fin.university_payment, fin.currency)}) + Extra: {formatCurrency(totalExtraIncome, fin.currency)}
                                 </span>
                               </div>
                             </>

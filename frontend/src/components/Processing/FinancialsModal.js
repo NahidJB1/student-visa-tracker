@@ -3,9 +3,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import { api } from '@/lib/api';
 
-function formatCurrency(value) {
-  if (value == null || isNaN(value)) return '$0.00';
-  return '$' + Number(value).toLocaleString('en-US', {
+function formatCurrency(value, currency = 'RM') {
+  if (value == null || isNaN(value)) return `${currency} 0.00`;
+  const symbol = currency === 'BDT' ? '৳' : 'RM';
+  return `${symbol} ` + Number(value).toLocaleString('en-US', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });
@@ -17,6 +18,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
     agent_commission: '',
     university_payment: '',
     amount_from_student: '',
+    currency: 'RM',
   });
   
   const [extraIncomes, setExtraIncomes] = useState([]);
@@ -38,6 +40,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
             agent_commission: f.agent_commission ?? '',
             university_payment: f.university_payment ?? '',
             amount_from_student: f.amount_from_student ?? '',
+            currency: f.currency || 'RM',
           });
           
           let parsedExtras = [];
@@ -47,7 +50,6 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
             parsedExtras = f.extra_incomes;
           }
           
-          // Migrate old single extra income if it exists and array is empty
           if (parsedExtras.length === 0 && f.extra_income_amount > 0) {
             parsedExtras.push({
               amount: f.extra_income_amount,
@@ -57,13 +59,11 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
           
           setExtraIncomes(parsedExtras);
 
-          // If there's base data, start in read-only mode
           if (f.amount_from_student > 0 || f.referrer_name) {
             setIsEditing(false);
           }
         }
       } catch (err) {
-        // No existing financials
       } finally {
         if (!cancelled) setLoading(false);
       }
@@ -87,7 +87,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
 
   const addExtraIncome = () => {
     setExtraIncomes(prev => [...prev, { amount: '', remark: '' }]);
-    setIsEditing(true); // Switch to edit mode if they want to add
+    setIsEditing(true);
   };
 
   const removeExtraIncome = (index) => {
@@ -114,6 +114,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
         agent_commission: parseFloat(form.agent_commission) || 0,
         university_payment: parseFloat(form.university_payment) || 0,
         amount_from_student: parseFloat(form.amount_from_student) || 0,
+        currency: form.currency,
         extra_incomes: extraIncomes.map(inc => ({
           amount: parseFloat(inc.amount) || 0,
           remark: inc.remark || ''
@@ -132,6 +133,8 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) onClose();
   };
+
+  const sym = form.currency === 'BDT' ? '৳' : 'RM';
 
   return (
     <div className="modal-overlay" onClick={handleOverlayClick}>
@@ -173,7 +176,12 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
               /* READ-ONLY VIEW */
               <div className="read-only-details" style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                 <div className="glass-card" style={{ padding: 20 }}>
-                  <h3 style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', marginBottom: 12 }}>Base Details</h3>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+                    <h3 style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', margin: 0 }}>Base Details</h3>
+                    <div style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--info)', background: 'var(--info-bg)', padding: '2px 8px', borderRadius: 4 }}>
+                      Currency: {form.currency}
+                    </div>
+                  </div>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                     <div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Referrer Name</div>
@@ -181,15 +189,15 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
                     </div>
                     <div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Amount from Student</div>
-                      <div style={{ fontWeight: 500 }}>{formatCurrency(form.amount_from_student)}</div>
+                      <div style={{ fontWeight: 500 }}>{formatCurrency(form.amount_from_student, form.currency)}</div>
                     </div>
                     <div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Agent Commission</div>
-                      <div style={{ fontWeight: 500 }}>{formatCurrency(form.agent_commission)}</div>
+                      <div style={{ fontWeight: 500 }}>{formatCurrency(form.agent_commission, form.currency)}</div>
                     </div>
                     <div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>University Payment</div>
-                      <div style={{ fontWeight: 500 }}>{formatCurrency(form.university_payment)}</div>
+                      <div style={{ fontWeight: 500 }}>{formatCurrency(form.university_payment, form.currency)}</div>
                     </div>
                   </div>
                 </div>
@@ -201,7 +209,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
                       {extraIncomes.map((inc, i) => (
                         <div key={i} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: i < extraIncomes.length - 1 ? '1px solid var(--border)' : 'none', paddingBottom: i < extraIncomes.length - 1 ? 12 : 0 }}>
                           <div>
-                            <div style={{ fontWeight: 600, color: 'var(--success)' }}>+{formatCurrency(inc.amount)}</div>
+                            <div style={{ fontWeight: 600, color: 'var(--success)' }}>+{formatCurrency(inc.amount, form.currency)}</div>
                             <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{inc.remark || 'No remark'}</div>
                           </div>
                         </div>
@@ -223,7 +231,22 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
               /* EDIT VIEW */
               <form onSubmit={handleSubmit}>
                 <div className="glass-card" style={{ padding: 20, marginBottom: 20 }}>
-                  <h3 style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', marginBottom: 16 }}>Base Details</h3>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+                    <h3 style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', margin: 0 }}>Base Details</h3>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Currency</label>
+                      <select 
+                        className="input-field" 
+                        style={{ padding: '4px 8px', width: 'auto' }}
+                        value={form.currency}
+                        onChange={handleChange('currency')}
+                      >
+                        <option value="RM">RM</option>
+                        <option value="BDT">BDT</option>
+                      </select>
+                    </div>
+                  </div>
+
                   <div className="form-group">
                     <label className="form-label">Referrer Name</label>
                     <input
@@ -236,7 +259,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
 
                   <div className="form-row">
                     <div className="form-group">
-                      <label className="form-label">Agent Commission ($)</label>
+                      <label className="form-label">Agent Commission ({sym})</label>
                       <input
                         type="number"
                         className="input-field"
@@ -248,7 +271,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
                       />
                     </div>
                     <div className="form-group">
-                      <label className="form-label">University Payment ($)</label>
+                      <label className="form-label">University Payment ({sym})</label>
                       <input
                         type="number"
                         className="input-field"
@@ -262,7 +285,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
                   </div>
 
                   <div className="form-group" style={{ marginBottom: 0 }}>
-                    <label className="form-label">Amount from Student ($)</label>
+                    <label className="form-label">Amount from Student ({sym})</label>
                     <input
                       type="number"
                       className="input-field"
@@ -297,7 +320,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
                         <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', background: 'var(--bg-primary)', padding: 12, borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
                           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}>
                             <div className="form-group" style={{ margin: 0 }}>
-                              <label className="form-label" style={{ fontSize: '0.75rem' }}>Amount ($)</label>
+                              <label className="form-label" style={{ fontSize: '0.75rem' }}>Amount ({sym})</label>
                               <input
                                 type="number"
                                 className="input-field"
@@ -337,7 +360,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
 
             {/* Global Earnings Preview */}
             <div className="earnings-preview" style={{ marginTop: 24, padding: 20, background: 'var(--bg-primary)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-              <div className="earnings-preview-label" style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Net Earnings</div>
+              <div className="earnings-preview-label" style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Net Earnings ({form.currency})</div>
               <div
                 className="earnings-preview-value"
                 style={{
@@ -346,7 +369,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
                   color: earningsPreview >= 0 ? 'var(--success)' : 'var(--error)',
                 }}
               >
-                {formatCurrency(earningsPreview)}
+                {formatCurrency(earningsPreview, form.currency)}
               </div>
               <div style={{
                 fontSize: '0.75rem',

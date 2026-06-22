@@ -46,7 +46,8 @@ router.put('/:id/financials', async (req, res) => {
       agent_commission = 0,
       university_payment = 0,
       amount_from_student = 0,
-      extra_incomes = []
+      extra_incomes = [],
+      currency = 'RM'
     } = req.body;
 
     // Check if financial record exists
@@ -62,19 +63,20 @@ router.put('/:id/financials', async (req, res) => {
           university_payment = $3,
           amount_from_student = $4,
           extra_incomes = $5,
+          currency = $6,
           updated_at = CURRENT_TIMESTAMP
-        WHERE student_id = $6`,
+        WHERE student_id = $7`,
         [referrer_name, agent_commission, university_payment,
-         amount_from_student, extraIncomesJson, id]
+         amount_from_student, extraIncomesJson, currency, id]
       );
     } else {
       await runQuery(
         `INSERT INTO financials
           (student_id, referrer_name, agent_commission, university_payment,
-           amount_from_student, extra_incomes)
-        VALUES ($1, $2, $3, $4, $5, $6)`,
+           amount_from_student, extra_incomes, currency)
+        VALUES ($1, $2, $3, $4, $5, $6, $7)`,
         [id, referrer_name, agent_commission, university_payment,
-         amount_from_student, extraIncomesJson]
+         amount_from_student, extraIncomesJson, currency]
       );
     }
 

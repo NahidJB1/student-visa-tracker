@@ -72,6 +72,6 @@ export const api = {
     apiRequest(`/dashboard/timeline?period=${period}`),
   getStatusDistribution: () =>
     apiRequest('/dashboard/status-distribution'),
-  getEarnings: () =>
-    apiRequest('/dashboard/earnings'),
+  getEarningsTimeline: (period = '1m', currency = 'RM') =>
+    apiRequest(`/dashboard/earnings-timeline?period=${period}&currency=${currency}`),
 };

@@ -67,6 +67,12 @@ async function initDb() {
       ADD COLUMN IF NOT EXISTS extra_incomes JSONB DEFAULT '[]'::jsonb;
     `);
 
+    // Migrate to support multiple currencies
+    await pool.query(`
+      ALTER TABLE financials 
+      ADD COLUMN IF NOT EXISTS currency VARCHAR(10) DEFAULT 'RM';
+    `);
+
     console.log('Database tables verified.');
 
     // ---------------------------------------------------------------------------

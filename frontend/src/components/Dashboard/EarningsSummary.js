@@ -12,56 +12,29 @@ import {
 } from 'recharts';
 import { api } from '@/lib/api';
 
-function formatCurrency(value) {
-  if (value == null || isNaN(value)) return '$0.00';
-  return '$' + Number(value).toLocaleString('en-US', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
+function formatCurrency(value, currency) {
+  if (value == null || isNaN(value)) return `${currency === 'BDT' ? '৳' : 'RM'} 0.00`;
+  const symbol = currency === 'BDT' ? '৳' : 'RM';
+  return `${symbol} ` + Number(value).toLocaleString('en-US', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   });
 }
 
-function CustomTooltip({ active, payload, label }) {
+function CustomTooltip({ active, payload, label, currency }) {
   if (!active || !payload?.length) return null;
   return (
     <div className="custom-tooltip">
       <div className="label">{label}</div>
-      <div className="value">{formatCurrency(payload[0].value)}</div>
+      <div className="value">{formatCurrency(payload[0].value, currency)}</div>
     </div>
   );
 }
 
-function AnimatedValue({ value }) {
-  const [display, setDisplay] = useState(0);
-
-  useEffect(() => {
-    if (value === 0) {
-      setDisplay(0);
-      return;
-    }
-    const duration = 800;
-    const steps = 30;
-    const increment = value / steps;
-    let current = 0;
-    let step = 0;
-
-    const timer = setInterval(() => {
-      step++;
-      current = Math.min(current + increment, value);
-      setDisplay(current);
-      if (step >= steps) {
-        setDisplay(value);
-        clearInterval(timer);
-      }
-    }, duration / steps);
-
-    return () => clearInterval(timer);
-  }, [value]);
-
-  return formatCurrency(display);
-}
-
 export default function EarningsSummary() {
-  const [earnings, setEarnings] = useState(null);
+  const [period, setPeriod] = useState('1m');
+  const [currency, setCurrency] = useState('RM');
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -69,67 +42,73 @@ export default function EarningsSummary() {
     async function fetchData() {
       setLoading(true);
       try {
-        const result = await api.getEarnings();
+        const result = await api.getEarningsTimeline(period, currency);
         if (!cancelled) {
-          setEarnings(result.earnings || result.data || result);
+          setData(result.timeline || []);
         }
       } catch (err) {
-        console.error('Failed to fetch earnings:', err);
-        if (!cancelled) setEarnings(null);
+        console.error('Failed to fetch earnings timeline:', err);
+        if (!cancelled) setData([]);
       } finally {
         if (!cancelled) setLoading(false);
       }
     }
     fetchData();
     return () => { cancelled = true; };
-  }, []);
+  }, [period, currency]);
 
-  const cards = earnings ? [
-    { label: '1 Month', value: earnings.oneMonth ?? earnings['1month'] ?? 0 },
-    { label: '3 Months', value: earnings.threeMonths ?? earnings['3months'] ?? 0 },
-    { label: '6 Months', value: earnings.sixMonths ?? earnings['6months'] ?? 0 },
-    { label: '12 Months', value: earnings.twelveMonths ?? earnings['12months'] ?? 0 },
-  ] : [];
-
-  const chartData = cards.map((c) => ({
-    period: c.label,
-    earnings: c.value,
-  }));
+  const periods = [
+    { value: '1m', label: '1 Month' },
+    { value: '3m', label: '3 Months' },
+    { value: '6m', label: '6 Months' },
+  ];
 
   return (
     <div>
-      <div className="dashboard-card-header">
+      <div className="dashboard-card-header" style={{ alignItems: 'flex-start' }}>
         <h3 className="dashboard-card-title">Earnings Overview</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, alignItems: 'flex-end' }}>
+          <div className="chart-toggle" style={{ background: 'var(--bg-primary)', border: '1px solid var(--border)' }}>
+            <button
+              className={currency === 'RM' ? 'active' : ''}
+              onClick={() => setCurrency('RM')}
+              style={{ padding: '4px 12px' }}
+            >
+              RM
+            </button>
+            <button
+              className={currency === 'BDT' ? 'active' : ''}
+              onClick={() => setCurrency('BDT')}
+              style={{ padding: '4px 12px' }}
+            >
+              BDT
+            </button>
+          </div>
+          <div className="chart-toggle">
+            {periods.map((p) => (
+              <button
+                key={p.value}
+                className={period === p.value ? 'active' : ''}
+                onClick={() => setPeriod(p.value)}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {loading ? (
-        <>
-          <div className="earnings-grid">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="skeleton" style={{ height: 80, borderRadius: 'var(--radius-md)' }} />
-            ))}
-          </div>
-          <div className="skeleton skeleton-chart" style={{ height: 200 }} />
-        </>
+        <div className="skeleton skeleton-chart" style={{ height: 280, marginTop: 16 }} />
       ) : (
-        <>
-          <div className="earnings-grid">
-            {cards.map((card, index) => (
-              <div
-                key={card.label}
-                className={`earnings-card animate-slide-up delay-${index + 1}`}
-              >
-                <div className="earnings-card-label">{card.label}</div>
-                <div className={`earnings-card-value ${card.value >= 0 ? 'positive' : 'negative'}`}>
-                  <AnimatedValue value={card.value} />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div style={{ height: 220, marginTop: 8 }}>
+        <div style={{ height: 280, marginTop: 16 }}>
+          {data.length === 0 ? (
+            <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>
+              No earnings recorded for this period.
+            </div>
+          ) : (
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={chartData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+              <BarChart data={data} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
                 <defs>
                   <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#6c5ce7" stopOpacity={0.9} />
@@ -138,7 +117,7 @@ export default function EarningsSummary() {
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
                 <XAxis
-                  dataKey="period"
+                  dataKey="date"
                   stroke="var(--text-tertiary)"
                   fontSize={12}
                   tickLine={false}
@@ -149,19 +128,23 @@ export default function EarningsSummary() {
                   fontSize={12}
                   tickLine={false}
                   axisLine={false}
-                  tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`}
+                  tickFormatter={(v) => {
+                    const sym = currency === 'BDT' ? '৳' : 'RM';
+                    if (v >= 1000) return `${sym}${(v / 1000).toFixed(0)}k`;
+                    return `${sym}${v}`;
+                  }}
                 />
-                <Tooltip content={<CustomTooltip />} />
+                <Tooltip content={<CustomTooltip currency={currency} />} />
                 <Bar
-                  dataKey="earnings"
+                  dataKey="total"
                   fill="url(#barGradient)"
                   radius={[6, 6, 0, 0]}
                   maxBarSize={60}
                 />
               </BarChart>
             </ResponsiveContainer>
-          </div>
-        </>
+          )}
+        </div>
       )}
     </div>
   );

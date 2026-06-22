@@ -82,32 +82,72 @@ router.get('/status-distribution', async (req, res) => {
 });
 
 // ---------------------------------------------------------------------------
-// GET /api/dashboard/earnings — earnings across periods
-// Earnings = (amount_from_student - (agent_commission + university_payment))
-//            + extra_income_amount
+// GET /api/dashboard/earnings-timeline — earnings over time
 // ---------------------------------------------------------------------------
-router.get('/earnings', async (req, res) => {
+router.get('/earnings-timeline', async (req, res) => {
   try {
-    const earningsQuery = async (monthsBack) => {
-      const row = await queryOne(`
-        SELECT COALESCE(SUM(
-          (f.amount_from_student - (f.agent_commission + f.university_payment))
-          + f.extra_income_amount
-        ), 0) AS total
-        FROM students s
-        JOIN financials f ON f.student_id = s.id
-        WHERE s.user_id = $1
-          AND s.created_at >= CURRENT_DATE - INTERVAL '${monthsBack} months'
-      `, [req.userId]);
-      return row ? parseFloat(row.total) : 0;
-    };
+    const period = req.query.period || '1m';
+    const currency = req.query.currency || 'RM';
+    let interval = '1 month';
+    if (period === '3m') interval = '3 months';
+    if (period === '6m') interval = '6 months';
 
-    res.json({
-      oneMonth: await earningsQuery(1),
-      threeMonths: await earningsQuery(3),
-      sixMonths: await earningsQuery(6),
-      twelveMonths: await earningsQuery(12)
+    // Fetch raw rows
+    const rows = await queryAll(`
+      SELECT 
+        s.created_at,
+        f.amount_from_student,
+        f.agent_commission,
+        f.university_payment,
+        f.extra_incomes
+      FROM students s
+      JOIN financials f ON f.student_id = s.id
+      WHERE s.user_id = $1 AND f.currency = $2
+        AND s.created_at >= CURRENT_DATE - INTERVAL '${interval}'
+      ORDER BY s.created_at ASC
+    `, [req.userId, currency]);
+
+    // Aggregate in Node.js
+    const aggregatedMap = new Map();
+
+    rows.forEach(row => {
+      const d = new Date(row.created_at);
+      let groupKey;
+      if (period === '1m') {
+        // Group by ISO week (e.g. Week 42)
+        const dCopy = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+        dCopy.setUTCDate(dCopy.getUTCDate() + 4 - (dCopy.getUTCDay()||7));
+        const yearStart = new Date(Date.UTC(dCopy.getUTCFullYear(),0,1));
+        const weekNo = Math.ceil(( ( (dCopy - yearStart) / 86400000) + 1)/7);
+        groupKey = `Week ${weekNo}`;
+      } else {
+        // Group by month (e.g. "Jan", "Feb")
+        groupKey = d.toLocaleString('en-US', { month: 'short' });
+      }
+
+      const fromStudent = parseFloat(row.amount_from_student) || 0;
+      const agentComm = parseFloat(row.agent_commission) || 0;
+      const uniPayment = parseFloat(row.university_payment) || 0;
+      
+      let extraIncomes = [];
+      if (typeof row.extra_incomes === 'string') {
+        try { extraIncomes = JSON.parse(row.extra_incomes); } catch(e){}
+      } else if (Array.isArray(row.extra_incomes)) {
+        extraIncomes = row.extra_incomes;
+      }
+      
+      const totalExtraIncome = extraIncomes.reduce((sum, inc) => sum + (parseFloat(inc.amount) || 0), 0);
+      const rowTotal = (fromStudent - (agentComm + uniPayment)) + totalExtraIncome;
+
+      aggregatedMap.set(groupKey, (aggregatedMap.get(groupKey) || 0) + rowTotal);
     });
+
+    const timeline = [];
+    for (const [date, total] of aggregatedMap.entries()) {
+      timeline.push({ date, total });
+    }
+
+    res.json({ timeline });
   } catch (err) {
     console.error('Earnings error:', err.message);
     res.status(500).json({ error: 'Internal server error.' });
