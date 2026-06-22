@@ -40,8 +40,7 @@ router.get('/', async (req, res) => {
         f.agent_commission,
         f.university_payment,
         f.amount_from_student,
-        f.extra_income_amount,
-        f.extra_income_remark
+        f.extra_incomes
       FROM students s
       LEFT JOIN financials f ON f.student_id = s.id
       WHERE s.user_id = $1

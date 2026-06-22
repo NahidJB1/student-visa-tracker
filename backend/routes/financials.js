@@ -46,12 +46,13 @@ router.put('/:id/financials', async (req, res) => {
       agent_commission = 0,
       university_payment = 0,
       amount_from_student = 0,
-      extra_income_amount = 0,
-      extra_income_remark = ''
+      extra_incomes = []
     } = req.body;
 
     // Check if financial record exists
     const existing = await queryOne('SELECT id FROM financials WHERE student_id = $1', [id]);
+
+    const extraIncomesJson = JSON.stringify(extra_incomes);
 
     if (existing) {
       await runQuery(
@@ -60,21 +61,20 @@ router.put('/:id/financials', async (req, res) => {
           agent_commission = $2,
           university_payment = $3,
           amount_from_student = $4,
-          extra_income_amount = $5,
-          extra_income_remark = $6,
+          extra_incomes = $5,
           updated_at = CURRENT_TIMESTAMP
-        WHERE student_id = $7`,
+        WHERE student_id = $6`,
         [referrer_name, agent_commission, university_payment,
-         amount_from_student, extra_income_amount, extra_income_remark, id]
+         amount_from_student, extraIncomesJson, id]
       );
     } else {
       await runQuery(
         `INSERT INTO financials
           (student_id, referrer_name, agent_commission, university_payment,
-           amount_from_student, extra_income_amount, extra_income_remark)
-        VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+           amount_from_student, extra_incomes)
+        VALUES ($1, $2, $3, $4, $5, $6)`,
         [id, referrer_name, agent_commission, university_payment,
-         amount_from_student, extra_income_amount, extra_income_remark]
+         amount_from_student, extraIncomesJson]
       );
     }
 

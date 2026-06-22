@@ -135,177 +135,175 @@ export default function StudentTable({
             const isExpanded = expandedId === id;
             const isExiting = exitingIds.has(id);
             const showStatus = showStatusId === id;
-            // Financial fields come flat from the API join
+            
             const hasFinancials = student.financial_id != null;
+            let extraIncomes = [];
+            if (hasFinancials && typeof student.extra_incomes === 'string') {
+              try {
+                extraIncomes = JSON.parse(student.extra_incomes) || [];
+              } catch (e) {
+                console.error("Failed to parse extra_incomes", e);
+              }
+            } else if (hasFinancials && Array.isArray(student.extra_incomes)) {
+              extraIncomes = student.extra_incomes;
+            }
+
             const fin = hasFinancials ? {
               referrer_name: student.referrer_name,
               agent_commission: student.agent_commission,
               university_payment: student.university_payment,
               amount_from_student: student.amount_from_student,
-              extra_income_amount: student.extra_income_amount,
-              extra_income_remark: student.extra_income_remark,
+              extra_incomes: extraIncomes
             } : null;
 
             let earnings = null;
+            let totalExtraIncome = 0;
             if (fin) {
               const fromStudent = parseFloat(fin.amount_from_student) || 0;
               const agentComm = parseFloat(fin.agent_commission) || 0;
               const uniPayment = parseFloat(fin.university_payment) || 0;
-              const extraIncome = parseFloat(fin.extra_income_amount) || 0;
-              earnings = (fromStudent - (agentComm + uniPayment)) + extraIncome;
+              
+              totalExtraIncome = extraIncomes.reduce((sum, inc) => sum + (parseFloat(inc.amount) || 0), 0);
+              earnings = (fromStudent - (agentComm + uniPayment)) + totalExtraIncome;
             }
 
             return (
-              <tr
-                key={id}
-                style={{ display: 'contents' }}
-              >
+              <React.Fragment key={id}>
                 {/* Main row */}
-                <td
-                  colSpan={5}
-                  style={{ padding: 0, border: 'none' }}
+                <tr
+                  className={`${isExpanded ? 'student-row-expanded' : ''} ${isExiting ? 'animate-row-exit' : ''}`}
+                  onClick={() => toggleExpand(id)}
                 >
-                  <div
-                    className={`${isExiting ? 'animate-row-exit' : ''}`}
-                  >
-                    <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: 0 }}>
-                      <tbody>
-                        <tr
-                          className={isExpanded ? 'student-row-expanded' : ''}
-                          onClick={() => toggleExpand(id)}
-                        >
-                          <td>
-                            <div className="student-name-cell">
-                              <div className="student-avatar">
-                                {getInitials(student.name)}
-                              </div>
-                              <span style={{ fontWeight: 500 }}>{student.name}</span>
-                            </div>
-                          </td>
-                          <td>
-                            <span style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}>
-                              {student.passport_number}
-                            </span>
-                          </td>
-                          <td>{student.institute_name || '—'}</td>
-                          <td>
-                            {showStatus ? (
-                              <StatusDropdown
-                                student={student}
-                                onStatusChange={(sid, newStatus) => {
-                                  setShowStatusId(null);
-                                  handleStatusChange(sid, newStatus);
-                                }}
-                              />
-                            ) : (
-                              <span
-                                className="status-badge"
-                                data-status={student.processing_status}
-                              >
-                                {student.processing_status}
-                              </span>
-                            )}
-                          </td>
-                          <td style={{ textAlign: 'center' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
-                              <button
-                                className="emgs-tracker-btn"
-                                onClick={(e) => handleEmgsTracker(e, student)}
-                                title="Copy passport & open EMGS tracker"
-                              >
-                                🔍
-                                {copiedId === id && (
-                                  <span style={{ fontSize: '0.7rem' }}>Copied!</span>
-                                )}
-                              </button>
-                              <ActionMenu
-                                onFinancials={() => onFinancialsClick?.(student)}
-                                onUpdateStatus={() =>
-                                  setShowStatusId((prev) => (prev === id ? null : id))
-                                }
-                              />
-                            </div>
-                          </td>
-                        </tr>
-
-                        {/* Expanded content */}
-                        {isExpanded && (
-                          <tr className="student-row-expanded">
-                            <td colSpan={5} style={{ padding: 0, borderBottom: '1px solid var(--border)' }}>
-                              <div className="student-expand-content">
-                                <div className="student-expand-inner">
-                                  <div className="student-expand-item">
-                                    <span className="student-expand-label">Course / Program</span>
-                                    <span className="student-expand-value">
-                                      {student.course_program || '—'}
-                                    </span>
-                                  </div>
-                                  <div className="student-expand-item">
-                                    <span className="student-expand-label">Created</span>
-                                    <span className="student-expand-value">
-                                      {formatDate(student.created_at || student.createdAt)}
-                                    </span>
-                                  </div>
-                                  <div className="student-expand-item">
-                                    <span className="student-expand-label">Updated</span>
-                                    <span className="student-expand-value">
-                                      {formatDate(student.updated_at || student.updatedAt)}
-                                    </span>
-                                  </div>
-                                  {fin && (
-                                    <>
-                                      {fin.referrer_name && (
-                                        <div className="student-expand-item">
-                                          <span className="student-expand-label">Referrer / Agent</span>
-                                          <span className="student-expand-value">
-                                            {fin.referrer_name}
-                                          </span>
-                                        </div>
-                                      )}
-                                      <div className="student-expand-item">
-                                        <span className="student-expand-label">Earnings</span>
-                                        <span
-                                          className="student-expand-value"
-                                          style={{
-                                            color: earnings >= 0 ? 'var(--success)' : 'var(--error)',
-                                            fontWeight: 700,
-                                          }}
-                                        >
-                                          {formatCurrency(earnings)}
-                                        </span>
-                                      </div>
-                                      <div className="student-expand-item">
-                                        <span className="student-expand-label">Breakdown</span>
-                                        <span
-                                          className="student-expand-value"
-                                          style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}
-                                        >
-                                          Student: {formatCurrency(fin.amount_from_student)} − (Comm: {formatCurrency(fin.agent_commission)} + Uni: {formatCurrency(fin.university_payment)}) + Extra: {formatCurrency(fin.extra_income_amount)}
-                                        </span>
-                                      </div>
-                                    </>
-                                  )}
-                                  {!fin && (
-                                    <div className="student-expand-item">
-                                      <span className="student-expand-label">Financials</span>
-                                      <span
-                                        className="student-expand-value"
-                                        style={{ color: 'var(--text-tertiary)', fontStyle: 'italic' }}
-                                      >
-                                        No financial data yet
-                                      </span>
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
+                  <td>
+                    <div className="student-name-cell">
+                      <div className="student-avatar">
+                        {getInitials(student.name)}
+                      </div>
+                      <span style={{ fontWeight: 500 }}>{student.name}</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}>
+                      {student.passport_number}
+                    </span>
+                  </td>
+                  <td>{student.institute_name || '—'}</td>
+                  <td>
+                    {showStatus ? (
+                      <div onClick={e => e.stopPropagation()}>
+                        <StatusDropdown
+                          student={student}
+                          onStatusChange={(sid, newStatus) => {
+                            setShowStatusId(null);
+                            handleStatusChange(sid, newStatus);
+                          }}
+                        />
+                      </div>
+                    ) : (
+                      <span
+                        className="status-badge"
+                        data-status={student.processing_status}
+                      >
+                        {student.processing_status}
+                      </span>
+                    )}
+                  </td>
+                  <td style={{ textAlign: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }} onClick={e => e.stopPropagation()}>
+                      <button
+                        className="emgs-tracker-btn"
+                        onClick={(e) => handleEmgsTracker(e, student)}
+                        title="Copy passport & open EMGS tracker"
+                      >
+                        🔍
+                        {copiedId === id && (
+                          <span style={{ fontSize: '0.7rem' }}>Copied!</span>
                         )}
-                      </tbody>
-                    </table>
-                  </div>
-                </td>
-              </tr>
+                      </button>
+                      <ActionMenu
+                        onFinancials={() => onFinancialsClick?.(student)}
+                        onUpdateStatus={() =>
+                          setShowStatusId((prev) => (prev === id ? null : id))
+                        }
+                      />
+                    </div>
+                  </td>
+                </tr>
+
+                {/* Expanded content */}
+                {isExpanded && (
+                  <tr>
+                    <td colSpan={5} style={{ padding: 0 }}>
+                      <div className="student-expand-content">
+                        <div className="student-expand-inner">
+                          <div className="student-expand-item">
+                            <span className="student-expand-label">Course / Program</span>
+                            <span className="student-expand-value">
+                              {student.course_program || '—'}
+                            </span>
+                          </div>
+                          <div className="student-expand-item">
+                            <span className="student-expand-label">Created</span>
+                            <span className="student-expand-value">
+                              {formatDate(student.created_at || student.createdAt)}
+                            </span>
+                          </div>
+                          <div className="student-expand-item">
+                            <span className="student-expand-label">Updated</span>
+                            <span className="student-expand-value">
+                              {formatDate(student.updated_at || student.updatedAt)}
+                            </span>
+                          </div>
+                          {fin && (
+                            <>
+                              {fin.referrer_name && (
+                                <div className="student-expand-item">
+                                  <span className="student-expand-label">Referrer / Agent</span>
+                                  <span className="student-expand-value">
+                                    {fin.referrer_name}
+                                  </span>
+                                </div>
+                              )}
+                              <div className="student-expand-item">
+                                <span className="student-expand-label">Earnings</span>
+                                <span
+                                  className="student-expand-value"
+                                  style={{
+                                    color: earnings >= 0 ? 'var(--success)' : 'var(--error)',
+                                    fontWeight: 700,
+                                  }}
+                                >
+                                  {formatCurrency(earnings)}
+                                </span>
+                              </div>
+                              <div className="student-expand-item">
+                                <span className="student-expand-label">Breakdown</span>
+                                <span
+                                  className="student-expand-value"
+                                  style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}
+                                >
+                                  Student: {formatCurrency(fin.amount_from_student)} − (Comm: {formatCurrency(fin.agent_commission)} + Uni: {formatCurrency(fin.university_payment)}) + Extra: {formatCurrency(totalExtraIncome)}
+                                </span>
+                              </div>
+                            </>
+                          )}
+                          {!fin && (
+                            <div className="student-expand-item">
+                              <span className="student-expand-label">Financials</span>
+                              <span
+                                className="student-expand-value"
+                                style={{ color: 'var(--text-tertiary)', fontStyle: 'italic' }}
+                              >
+                                No financial data yet
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                )}
+              </React.Fragment>
             );
           })}
         </tbody>

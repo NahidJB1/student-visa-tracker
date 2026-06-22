@@ -61,6 +61,14 @@ async function initDb() {
       );
     `);
 
+    // Migrate to support multiple extra incomes
+    await pool.query(`
+      ALTER TABLE financials 
+      ADD COLUMN IF NOT EXISTS extra_incomes JSONB DEFAULT '[]'::jsonb;
+    `);
+
+    console.log('Database tables verified.');
+
     // ---------------------------------------------------------------------------
     // Indexes
     // ---------------------------------------------------------------------------
