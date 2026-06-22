@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const checkfilesDir = path.join(__dirname, '../../Checkfiles');
-const outputFile = path.join(__dirname, '../data/universities-data.json');
+const outputFile = path.join(__dirname, '../universities.json');
 
 // Ensure data dir exists
 if (!fs.existsSync(path.dirname(outputFile))) {

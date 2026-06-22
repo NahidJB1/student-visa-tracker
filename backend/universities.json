@@ -1,0 +1,3842 @@
+[
+  {
+    "id": "alfa-university-college-foundation-in-business-1",
+    "university": "ALFA University College",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Business",
+    "duration": "1 Year",
+    "fees": "RM 14,700"
+  },
+  {
+    "id": "alfa-university-college-foundation-in-arts---design-2",
+    "university": "ALFA University College",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts & Design",
+    "duration": "1 Year",
+    "fees": "RM 14,700"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-accountancy-1",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Accountancy",
+    "duration": "2.5 Years",
+    "fees": "RM 30,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-business-administration-2",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Business Administration",
+    "duration": "2.5 Years",
+    "fees": "RM 30,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-e-business-3",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in E-Business",
+    "duration": "2.5 Years",
+    "fees": "RM 30,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-information-technology-4",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Information Technology",
+    "duration": "2.5 Years",
+    "fees": "RM 33,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-early-childhood-5",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Early Childhood",
+    "duration": "2.5 Years",
+    "fees": "RM 30,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-early-childhood--odl--6",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Early Childhood (ODL)",
+    "duration": "2.5 Years",
+    "fees": "RM 30,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-graphic-design-7",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Graphic Design",
+    "duration": "2.5 Years",
+    "fees": "RM 33,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-multimedia-design-8",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Multimedia Design",
+    "duration": "2.5 Years",
+    "fees": "RM 33,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-architecture-9",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Architecture",
+    "duration": "3 Years",
+    "fees": "RM 48,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-interior-architecture-10",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Interior Architecture",
+    "duration": "3 Years",
+    "fees": "RM 48,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-culinary-arts-11",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Culinary Arts",
+    "duration": "2.5 Years",
+    "fees": "RM 37,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-tourism-management-12",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Tourism Management",
+    "duration": "2.5 Years",
+    "fees": "RM 37,000"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-tourism-hajj-and-umrah--wbl--13",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Tourism Hajj and Umrah (WBL)",
+    "duration": "2.5 Years",
+    "fees": "RM 38,000"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-hotel-management--wbl--14",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Hotel Management (WBL)",
+    "duration": "2.5 Years",
+    "fees": "RM 38,000"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-retail-management--wbl--15",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Retail Management (WBL)",
+    "duration": "2.5 Years",
+    "fees": "RM 33,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-event-management-16",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Event Management",
+    "duration": "2.5 Years",
+    "fees": "RM 33,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-law-enforcement-17",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Law Enforcement",
+    "duration": "2.5 Years",
+    "fees": "RM 33,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-tesl-18",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in TESL",
+    "duration": "2.5 Years",
+    "fees": "RM 30,500"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-health-care-management-19",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Health Care Management",
+    "duration": "3 Years",
+    "fees": "RM 42,000"
+  },
+  {
+    "id": "alfa-university-college-diploma-in-pharmacy-20",
+    "university": "ALFA University College",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Pharmacy",
+    "duration": "3 Years",
+    "fees": "RM 47,500"
+  },
+  {
+    "id": "alfa-university-college-ba--honours--business-administration-1",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "BA (HONOURS) Business Administration",
+    "duration": "3 Years",
+    "fees": "RM 40,500"
+  },
+  {
+    "id": "alfa-university-college-ba--honours--business-administration--odl--2",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "BA (HONOURS) Business Administration (ODL)",
+    "duration": "3 Years",
+    "fees": "RM 32,000"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-early-childhood-education--honours--3",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Early Childhood Education (HONOURS)",
+    "duration": "3 Years",
+    "fees": "RM 40,500"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-e-business--honours--4",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of E-Business (HONOURS)",
+    "duration": "3 Years",
+    "fees": "RM 40,500"
+  },
+  {
+    "id": "alfa-university-college-bachelor--honours--human-resource-management-5",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor (HONOURS) Human Resource Management",
+    "duration": "3 Years",
+    "fees": "RM 40,500"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-information-technology--honours--6",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Information Technology (HONOURS)",
+    "duration": "3 Years",
+    "fees": "RM 43,000"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-science--honours--in-hospitality-management-7",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Science (HONOURS) in Hospitality Management",
+    "duration": "3 Years",
+    "fees": "RM 44,500"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-arts--honours--graphic-design-8",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Arts (HONOURS) Graphic Design",
+    "duration": "3 Years",
+    "fees": "RM 43,000"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-arts--honours--creative-multimedia-9",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Arts (HONOURS) Creative Multimedia",
+    "duration": "3 Years",
+    "fees": "RM 43,000"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-science--honours--in-architecture-10",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Science (HONOURS) in Architecture",
+    "duration": "3 Years",
+    "fees": "RM 59,000"
+  },
+  {
+    "id": "alfa-university-college-bachelor-of-law-enforcement-11",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Law Enforcement",
+    "duration": "3 Years",
+    "fees": "RM 42,500"
+  },
+  {
+    "id": "alfa-university-college-bachelor-in-computer-science--cyber-security---networks---honours--12",
+    "university": "ALFA University College",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor in Computer Science (Cyber Security & Networks) (HONOURS)",
+    "duration": "3 Years",
+    "fees": "RM 48,000"
+  },
+  {
+    "id": "alfa-university-college-graduate-certificate-in-english-proficiency-1",
+    "university": "ALFA University College",
+    "level": "GRADUATE CERTIFICATE & DIPLOMA",
+    "name": "Graduate Certificate in English Proficiency",
+    "duration": "1 Year",
+    "fees": "RM 16,500"
+  },
+  {
+    "id": "alfa-university-college-graduate-diploma-in-teaching-as-second-language--tsl--2",
+    "university": "ALFA University College",
+    "level": "GRADUATE CERTIFICATE & DIPLOMA",
+    "name": "Graduate Diploma in Teaching as Second Language (TSL)",
+    "duration": "1.5 Year",
+    "fees": "RM 28,000"
+  },
+  {
+    "id": "alfa-university-college-graduate-diploma-in-business-management-3",
+    "university": "ALFA University College",
+    "level": "GRADUATE CERTIFICATE & DIPLOMA",
+    "name": "Graduate Diploma in Business Management",
+    "duration": "1.5 Year",
+    "fees": "RM 23,500"
+  },
+  {
+    "id": "alfa-university-college-master-of-business-administration-1",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Business Administration",
+    "duration": "1 Years & 4 Months",
+    "fees": "RM 27,500"
+  },
+  {
+    "id": "alfa-university-college-master-of-business-administration--international-business--2",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Business Administration (International Business)",
+    "duration": "1 Years & 3 Months",
+    "fees": "RM 27,500"
+  },
+  {
+    "id": "alfa-university-college-master-of-business-administration--odl--3",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Business Administration (ODL)",
+    "duration": "1 Years & 4 Months",
+    "fees": "RM 26,000"
+  },
+  {
+    "id": "alfa-university-college-master-of-project-management-4",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Project Management",
+    "duration": "1 Years & 3 Months",
+    "fees": "RM 28,500"
+  },
+  {
+    "id": "alfa-university-college-master-in-information-technology-5",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master in Information Technology",
+    "duration": "1 Years & 4 Months",
+    "fees": "RM 30,500"
+  },
+  {
+    "id": "alfa-university-college-master-of-education-in-early-childhood-education--by-research--6",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Education in Early Childhood Education (By Research)",
+    "duration": "2 Years",
+    "fees": "RM 27,500"
+  },
+  {
+    "id": "alfa-university-college-master-of-education-in-tesl--by-research--7",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Education in TESL (By Research)",
+    "duration": "2 Years",
+    "fees": "RM 27,500"
+  },
+  {
+    "id": "alfa-university-college-master-of-science-in-management--by-research--8",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Science in Management (By Research)",
+    "duration": "2-3 Years",
+    "fees": "RM 40,000"
+  },
+  {
+    "id": "alfa-university-college-master-of-art---design--by-research--9",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Art & Design (By Research)",
+    "duration": "2-3 Years",
+    "fees": "RM 40,000"
+  },
+  {
+    "id": "alfa-university-college-master-of-education-10",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Education",
+    "duration": "2 Years",
+    "fees": "RM 37,000"
+  },
+  {
+    "id": "alfa-university-college-master-of-philosophy-in-engineering--by-research--11",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Philosophy in Engineering (By Research)",
+    "duration": "2-3 Years",
+    "fees": "RM 47,500"
+  },
+  {
+    "id": "alfa-university-college-master-in-supply-chain-management-12",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master in Supply Chain Management",
+    "duration": "1 Years & 3 Months",
+    "fees": "RM 31,000"
+  },
+  {
+    "id": "alfa-university-college-master-of-business-administration-in-oil---gas-13",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Business Administration in Oil & Gas",
+    "duration": "1 Years & 3 Months",
+    "fees": "RM 33,500"
+  },
+  {
+    "id": "alfa-university-college-master-of-music--by-research--14",
+    "university": "ALFA University College",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Music (By Research)",
+    "duration": "2 Years",
+    "fees": "RM 40,000"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-philosophy-in-management--by-research--1",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Philosophy in Management (By Research)",
+    "duration": "3 Years",
+    "fees": "RM 39,500"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-philosophy-in-social-sciences--by-research--2",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Philosophy in Social Sciences (By Research)",
+    "duration": "3 Years",
+    "fees": "RM 39,500"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-philosophy-in-information-technology--by-research--3",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Philosophy in Information Technology (By Research)",
+    "duration": "3 Years",
+    "fees": "RM 39,500"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-philosophy-in-education--by-research--4",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Philosophy in Education (By Research)",
+    "duration": "3 Years",
+    "fees": "RM 39,500"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-philosophy-in-art---design--by-research--5",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Philosophy in Art & Design (By Research)",
+    "duration": "3 Years",
+    "fees": "RM 39,500"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-philosophy-in-performing-arts--by-research--6",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Philosophy in Performing Arts (By Research)",
+    "duration": "3 Years",
+    "fees": "RM 39,500"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-philosophy-in-sports-science--by-research--7",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Philosophy in Sports Science (By Research)",
+    "duration": "3 Years",
+    "fees": "RM 39,500"
+  },
+  {
+    "id": "alfa-university-college-doctor-of-business-administration--dba--8",
+    "university": "ALFA University College",
+    "level": "DOCTORATE PROGRAMMES",
+    "name": "Doctor of Business Administration (DBA)",
+    "duration": "3 Years",
+    "fees": "RM 45,000"
+  },
+  {
+    "id": "bac-education-group-foundation-in-computing---engineering-1",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Foundation in Computing & Engineering",
+    "duration": "1 year",
+    "fees": "RM17,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-information-technology--cybersecurity--2",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Diploma in Information Technology (Cybersecurity)",
+    "duration": "2.5 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-game-development-3",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Diploma in Game Development",
+    "duration": "3 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-interactive---digital-media-4",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Diploma in Interactive & Digital Media",
+    "duration": "3 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-robotic---automation-5",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Diploma in Robotic & Automation",
+    "duration": "3 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-digital-marketing-6",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Diploma in Digital Marketing",
+    "duration": "3 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-multimedia--interactive-media--7",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Bachelor of Multimedia (Interactive Media)",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-computer-science--data-science--8",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Bachelor of Computer Science (Data Science)",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-game-development--game-technology--9",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Bachelor of Game Development (Game Technology)",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-computer-science--honours--10",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Bachelor of Computer Science (Honours)",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-software-engineering--honours--11",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Bachelor of Software Engineering (Honours)",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-computer-engineering--honours--12",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Bachelor of Computer Engineering (Honours)",
+    "duration": "4 years",
+    "fees": "RM61,168"
+  },
+  {
+    "id": "bac-education-group-master-of-business-administration--mba---by-coursework--13",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Master of Business Administration (MBA) (By coursework)",
+    "duration": "1.5 years",
+    "fees": "RM25,168"
+  },
+  {
+    "id": "bac-education-group-master-of-education-14",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Master of Education",
+    "duration": "1.5 years",
+    "fees": "RM25,168"
+  },
+  {
+    "id": "bac-education-group-master-in-computing--by-research--15",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Master in Computing (By research)",
+    "duration": "2 years",
+    "fees": "RM25,168"
+  },
+  {
+    "id": "bac-education-group-master-of-science-in-engineering--by-research--16",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Master of Science in Engineering (By research)",
+    "duration": "2 years",
+    "fees": "RM25,168"
+  },
+  {
+    "id": "bac-education-group-doctor-of-philosophy-in-education-17",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Doctor of Philosophy in Education",
+    "duration": "3 years",
+    "fees": "RM34,168"
+  },
+  {
+    "id": "bac-education-group-doctor-of-philosophy--computing--18",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Doctor of Philosophy (Computing)",
+    "duration": "3 years",
+    "fees": "RM34,168"
+  },
+  {
+    "id": "bac-education-group-doctor-of-philosophy-in-engineering-19",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Doctor of Philosophy in Engineering",
+    "duration": "3 years",
+    "fees": "RM34,168"
+  },
+  {
+    "id": "bac-education-group-doctor-of-philosophy-in-business-management-20",
+    "university": "BAC EDUCATION GROUP",
+    "level": "UNIMY",
+    "name": "Doctor of Philosophy in Business Management",
+    "duration": "3 years",
+    "fees": "RM34,168"
+  },
+  {
+    "id": "bac-education-group-foundation-in-business-1",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "Foundation in Business",
+    "duration": "1 year",
+    "fees": "RM23,068"
+  },
+  {
+    "id": "bac-education-group-foundation-in-law-2",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "Foundation in Law",
+    "duration": "1 year",
+    "fees": "RM26,068"
+  },
+  {
+    "id": "bac-education-group-a-level--2-subjects--3",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "A-Level (2 subjects)",
+    "duration": "1.5 years",
+    "fees": "RM23,900"
+  },
+  {
+    "id": "bac-education-group-a-level--3-subjects--4",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "A-Level (3 subjects)",
+    "duration": "1.5 years",
+    "fees": "RM31,900"
+  },
+  {
+    "id": "bac-education-group-a-level--4-subjects--5",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "A-Level (4 subjects)",
+    "duration": "1.5 years",
+    "fees": "RM36,900"
+  },
+  {
+    "id": "bac-education-group-llb--3-0--university-of-london-international-programmes-6",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "LLB (3+0) University of London International Programmes",
+    "duration": "3 years",
+    "fees": "RM61,168 + UK Partner Fees"
+  },
+  {
+    "id": "bac-education-group-uk-transfer-degree-programme-law-7",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "UK Transfer Degree Programme Law",
+    "duration": "3 years",
+    "fees": "RM71,168 + UK Partner Fees"
+  },
+  {
+    "id": "bac-education-group-uk-transfer-degree-programme-business-8",
+    "university": "BAC EDUCATION GROUP",
+    "level": "BAC COLLEGE",
+    "name": "UK Transfer Degree Programme Business",
+    "duration": "3 years",
+    "fees": "RM53,168 + UK Partner Fees"
+  },
+  {
+    "id": "bac-education-group-foundation-in-media-studies-1",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "Foundation in Media Studies",
+    "duration": "1 year",
+    "fees": "RM18,068"
+  },
+  {
+    "id": "bac-education-group-diploma-in-broadcasting-and-film-2",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "Diploma in Broadcasting and Film",
+    "duration": "2 years",
+    "fees": "RM44,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-mass-communication-3",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "Diploma in Mass Communication",
+    "duration": "2 years",
+    "fees": "RM44,168"
+  },
+  {
+    "id": "bac-education-group-ba-hons--film-production----university-of-sunderland--3-0--4",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "BA Hons (Film Production) - University of Sunderland (3+0)",
+    "duration": "3 years",
+    "fees": "RM88,168"
+  },
+  {
+    "id": "bac-education-group-ba-hons-in-advertising---design---university-of-sunderland--3-0--5",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "BA Hons in Advertising & Design - University of Sunderland (3+0)",
+    "duration": "3 years",
+    "fees": "RM88,168"
+  },
+  {
+    "id": "bac-education-group-ba-hons-in-media-culture-and-communication---university-of-sunderland--3-0--6",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "BA Hons in Media Culture and Communication - University of Sunderland (3+0)",
+    "duration": "3 years",
+    "fees": "RM88,168"
+  },
+  {
+    "id": "bac-education-group-ba-hons-in-social-media-management---university-of-sunderland--3-0--7",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "BA Hons in Social Media Management - University of Sunderland (3+0)",
+    "duration": "3 years",
+    "fees": "RM88,168"
+  },
+  {
+    "id": "bac-education-group-uk-degree-transfer-programme--mass-communication---2-1--8",
+    "university": "BAC EDUCATION GROUP",
+    "level": "IACT COLLEGE",
+    "name": "UK Degree Transfer Programme (Mass Communication) (2+1)",
+    "duration": "3 years",
+    "fees": "RM55,168 + UK Partner Fees"
+  },
+  {
+    "id": "bac-education-group-foundation-in-arts-1",
+    "university": "BAC EDUCATION GROUP",
+    "level": "VERITAS UNIVERSITY",
+    "name": "Foundation in Arts",
+    "duration": "1 year",
+    "fees": "RM17,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-early-childhood-education-2",
+    "university": "BAC EDUCATION GROUP",
+    "level": "VERITAS UNIVERSITY",
+    "name": "Diploma in Early Childhood Education",
+    "duration": "2.5 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-ba--hons--accounting---finance-3",
+    "university": "BAC EDUCATION GROUP",
+    "level": "VERITAS UNIVERSITY",
+    "name": "BA (Hons) Accounting & Finance",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-communication--hons--branding---digital-marketing-4",
+    "university": "BAC EDUCATION GROUP",
+    "level": "VERITAS UNIVERSITY",
+    "name": "Bachelor of Communication (Hons) Branding & Digital Marketing",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-of-education--early-childhood--with-honors-5",
+    "university": "BAC EDUCATION GROUP",
+    "level": "VERITAS UNIVERSITY",
+    "name": "Bachelor of Education (Early Childhood) with Honors",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-bachelor-in-business-administration--hons--6",
+    "university": "BAC EDUCATION GROUP",
+    "level": "VERITAS UNIVERSITY",
+    "name": "Bachelor in Business Administration (Hons)",
+    "duration": "3 years",
+    "fees": "RM46,168"
+  },
+  {
+    "id": "bac-education-group-masters-of-business-administration-7",
+    "university": "BAC EDUCATION GROUP",
+    "level": "VERITAS UNIVERSITY",
+    "name": "Masters of Business Administration",
+    "duration": "1.5 years",
+    "fees": "RM25,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-culinary-arts-1",
+    "university": "BAC EDUCATION GROUP",
+    "level": "RELIANCE COLLEGE",
+    "name": "Diploma in Culinary Arts",
+    "duration": "2 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-business-management-2",
+    "university": "BAC EDUCATION GROUP",
+    "level": "RELIANCE COLLEGE",
+    "name": "Diploma in Business Management",
+    "duration": "2.5 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "bac-education-group-diploma-in-hotel-management-3",
+    "university": "BAC EDUCATION GROUP",
+    "level": "RELIANCE COLLEGE",
+    "name": "Diploma in Hotel Management",
+    "duration": "2.5 years",
+    "fees": "RM29,168"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-business-1",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Business",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-arts--communication--2",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts (Communication)",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-arts--english--3",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts (English)",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-arts--graphic-design---multimedia--4",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts (Graphic Design & Multimedia)",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-arts--build-environment--5",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts (Build Environment)",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-arts--fashion-design--6",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts (Fashion Design)",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-science-7",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Science",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-foundation-in-information-technology-8",
+    "university": "City University Malaysia",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Information Technology",
+    "duration": "1",
+    "fees": "RM25,839"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-fashion-design-1",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Fashion Design",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-graphic-design-2",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Graphic Design",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-mass-communication-3",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Mass Communication",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-corporate-communication-4",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma Corporate Communication",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-accounting-5",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Accounting",
+    "duration": "3",
+    "fees": "RM44,776"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-business-management-6",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Business Management",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-human-resource-management-7",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Human Resource Management",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-office-management-8",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Office Management",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-islamic-banking-9",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Islamic Banking",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-management-10",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Management",
+    "duration": "3",
+    "fees": "RM44,776"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-information-technology-11",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Information Technology",
+    "duration": "3",
+    "fees": "RM44,776"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-medical-lab-technology-12",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Medical Lab Technology",
+    "duration": "3",
+    "fees": "RM45,412"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-nursing-13",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Nursing",
+    "duration": "3",
+    "fees": "RM44,458"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-occupational-safety---health-14",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Occupational Safety & Health",
+    "duration": "3",
+    "fees": "RM45,412"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-environmental-health-15",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Environmental Health",
+    "duration": "3",
+    "fees": "RM45,412"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-culinary-arts-16",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Culinary Arts",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-hotel-management--17",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Hotel Management.",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-early-childhood-education-18",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Early Childhood Education",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-civil-engineering-19",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Civil Engineering",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-mechanical-engineering-20",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Mechanical Engineering",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-architectural-technology-21",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Architectural Technology",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-diploma-in-interior-design-22",
+    "university": "City University Malaysia",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Interior Design",
+    "duration": "3",
+    "fees": "RM45,094"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-graphic-design--hons--1",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Graphic Design (Hons)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-fashion-design--hons--2",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Fashion Design (Hons)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-multimedia--hons--3",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Multimedia (Hons)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-communication--hons--corporate-communication-4",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Communication (Hons) Corporate Communication",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-communication--hons--mass-communication-5",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Communication (Hons) Mass Communication",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-communication--hons--journalism-6",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Communication (Hons) Journalism",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-animation----7",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Animation***",
+    "duration": "3",
+    "fees": "RM68,520"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-game-design----8",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Game Design***",
+    "duration": "3",
+    "fees": "RM68,520"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-business-administration--hons--9",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Business Administration (Hons)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-engineering-management--hons--10",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Engineering Management (Hons)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-accounting--hons--11",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Accounting (Hons)",
+    "duration": "3.5",
+    "fees": "RM69,050"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-science--hons--accounting---finance-12",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Science (Hons) Accounting & Finance",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-information-technology--hons--13",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Information Technology (Hons)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-in-software-engineering-14",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor in Software Engineering",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-computer-science--artificial-intelligence---hons-----15",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Computer Science (Artificial Intelligence) (Hons)***",
+    "duration": "3",
+    "fees": "RM68,520"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-computer-science--cyber-security--hons--16",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Computer Science (Cyber Security) Hons)",
+    "duration": "3",
+    "fees": "RM68,520"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-occupational-safety---health--hons--17",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Occupational Safety & Health (Hons)",
+    "duration": "4",
+    "fees": "RM69,580"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-biomedical-sciences--hons--18",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Biomedical Sciences (Hons)",
+    "duration": "4",
+    "fees": "RM69,580"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-environmental-health--hons--19",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Environmental Health (Hons)",
+    "duration": "4",
+    "fees": "RM69,580"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-nursing-20",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Nursing",
+    "duration": "4",
+    "fees": "RM67,990"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-hospitality-management--hons---single-award--21",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Hospitality Management (Hons) (Single Award)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-education--early-childhood-education--honours-22",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Education (Early Childhood Education) Honours",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-applied-psychology--hons--23",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Applied Psychology (Hons)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-education--hons--in-teaching-english-as-a-second-language--tesl--24",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Education (Hons) in Teaching English as a Second Language (TESL)",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-civil-engineering-with-honours-25",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Civil Engineering with Honours",
+    "duration": "4",
+    "fees": "RM67,990"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-mechanical-engineering-with-honours-26",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Mechanical Engineering with Honours",
+    "duration": "4",
+    "fees": "RM67,990"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-science--hons--architectural-design-27",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Science (Hons) Architectural Design",
+    "duration": "3",
+    "fees": "RM57,496"
+  },
+  {
+    "id": "city-university-malaysia-bachelor-of-interior-design--hons--28",
+    "university": "City University Malaysia",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Interior Design (Hons)",
+    "duration": "3.5",
+    "fees": "RM58,556"
+  },
+  {
+    "id": "city-university-malaysia-master-of-business-administration--mba--1",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Business Administration (MBA)",
+    "duration": "1",
+    "fees": "RM35,273"
+  },
+  {
+    "id": "city-university-malaysia-master-of-science-in-business-administration--by-research---mscba--2",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Science in Business Administration (By Research) (MSCBA)",
+    "duration": "2",
+    "fees": "RM36,863"
+  },
+  {
+    "id": "city-university-malaysia-master-of-information-technology--mit--3",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Information Technology (MIT)",
+    "duration": "1",
+    "fees": "RM35,273"
+  },
+  {
+    "id": "city-university-malaysia-master-of-accounting--macc--4",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Accounting (MACC)",
+    "duration": "1",
+    "fees": "RM35,273"
+  },
+  {
+    "id": "city-university-malaysia-master-of-education--med--5",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Education (MED)",
+    "duration": "1",
+    "fees": "RM35,273"
+  },
+  {
+    "id": "city-university-malaysia-master-of-architecture--m-arc--6",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Architecture (M.ARC)",
+    "duration": "2",
+    "fees": "RM35,803"
+  },
+  {
+    "id": "city-university-malaysia-master-of-mechanical-engineering--mme--7",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Mechanical Engineering (MME)",
+    "duration": "1",
+    "fees": "RM35,273"
+  },
+  {
+    "id": "city-university-malaysia-master-of-sport-studies--mss--by-research-8",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Sport Studies (MSS) By Research",
+    "duration": "2",
+    "fees": "RM36,863"
+  },
+  {
+    "id": "city-university-malaysia-master-of-creative-industries-and-communication--mcic--9",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Creative Industries and Communication (MCIC)",
+    "duration": "1",
+    "fees": "RM35,273"
+  },
+  {
+    "id": "city-university-malaysia-master-of-architecture-project-management--mapm--10",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Architecture Project Management (MAPM)",
+    "duration": "1",
+    "fees": "RM35,273"
+  },
+  {
+    "id": "city-university-malaysia-master-in-artificial-intelligence----11",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master in Artificial Intelligence***",
+    "duration": "1",
+    "fees": "RM35,660"
+  },
+  {
+    "id": "city-university-malaysia-master-in-cybersecurity-12",
+    "university": "City University Malaysia",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master in Cybersecurity",
+    "duration": "1",
+    "fees": "RM35,660"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-business-administration--dba--1",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Business Administration (DBA)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-education--de--2",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Education (DE)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-business-administration--phdba--3",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Business Administration (PhDBA)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-design--phd-design--4",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Design (PhD Design)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-education--phd-edu--5",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Education (PhD Edu)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-information-technology--phd-it--6",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Information Technology (PhD IT)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-sport-studies--phd-ss--7",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Sport Studies (PhD SS)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-performing-art--phd-pa--8",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Performing Art (PhD PA)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-built-environment--phd-be--9",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Built Environment (PhD BE)",
+    "duration": "3",
+    "fees": "RM53,998"
+  },
+  {
+    "id": "city-university-malaysia-doctor-of-philosophy-in-engineering----10",
+    "university": "City University Malaysia",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Philosophy in Engineering***",
+    "duration": "3",
+    "fees": "RM53,404"
+  },
+  {
+    "id": "university-of-cyberjaya-foundation-in-science--fis--1",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Foundation Programs",
+    "name": "FOUNDATION IN SCIENCE (FIS)",
+    "duration": "1 Year",
+    "fees": "27,400"
+  },
+  {
+    "id": "university-of-cyberjaya-foundation-in-arts--fia--2",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Foundation Programs",
+    "name": "FOUNDATION IN ARTS (FIA)",
+    "duration": "1 Year",
+    "fees": "26,100"
+  },
+  {
+    "id": "university-of-cyberjaya-ielts-preparatory-program--ipp--3",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Foundation Programs",
+    "name": "IELTS PREPARATORY PROGRAM (IPP)",
+    "duration": "1 Sem",
+    "fees": "10,000"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-accounting--dia--1",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN ACCOUNTING (DIA)",
+    "duration": "3 Years",
+    "fees": "26,000"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-cosmetics--dicos--2",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN COSMETICS (DICOS)",
+    "duration": "3 Years",
+    "fees": "47,000"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-digital-creative-content--ddc--3",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN DIGITAL CREATIVE CONTENT (DDC)",
+    "duration": "3 Years",
+    "fees": "32,500"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-graphic-design--dgd--4",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN GRAPHIC DESIGN (DGD)",
+    "duration": "3 Years",
+    "fees": "32,500"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-nursing--dnsg--5",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN NURSING (DNSG)",
+    "duration": "3 Years",
+    "fees": "45,900"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-occupational-safety-and-health--dosh--6",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN OCCUPATIONAL SAFETY AND HEALTH (DOSH)",
+    "duration": "3 Years",
+    "fees": "48,500"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-psychology--dpsy--7",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN PSYCHOLOGY (DPSY)",
+    "duration": "3 Years",
+    "fees": "47,000"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-mass-communication--dmcomm--8",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN MASS COMMUNICATION (DMCOMM)",
+    "duration": "2 Years",
+    "fees": "27,500"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-3d-animation--danim--9",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN 3D ANIMATION (DANIM)",
+    "duration": "2 Years",
+    "fees": "32,500"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-business-administration--diba--10",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN BUSINESS ADMINISTRATION (DIBA)",
+    "duration": "3 Years",
+    "fees": "26,000"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-early-childhood-education--dece--11",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN EARLY CHILDHOOD EDUCATION (DECE)",
+    "duration": "3 Years",
+    "fees": "44,300"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-information-technology--dit--12",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN INFORMATION TECHNOLOGY (DIT)",
+    "duration": "3 Years",
+    "fees": "25,400"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-pharmacy--dpharm--13",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN PHARMACY (DPHARM)",
+    "duration": "3 Years",
+    "fees": "50,200"
+  },
+  {
+    "id": "university-of-cyberjaya-diploma-in-medical-and-health-science--dmhs--14",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Diploma Programs",
+    "name": "DIPLOMA IN MEDICAL AND HEALTH SCIENCE (DMHS)",
+    "duration": "3 Years",
+    "fees": "57,200"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-medicine-and-bachelor-of-surgery--mbbs--1",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBBS)",
+    "duration": "5 Years",
+    "fees": "395,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-pharmacy--hons---bpharm--2",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF PHARMACY (HONS) (BPHARM)",
+    "duration": "4 Years",
+    "fees": "102,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-psychology--hons---bpsy--3",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF PSYCHOLOGY (HONS) (BPSY)",
+    "duration": "4 Years",
+    "fees": "63,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-nursing--hons---bnsg--4",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF NURSING (HONS) (BNSG)",
+    "duration": "4 Years",
+    "fees": "67,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-occupational-safety-and-health--hons---bosh--5",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF OCCUPATIONAL SAFETY AND HEALTH (HONS) (BOSH)",
+    "duration": "3 Years",
+    "fees": "74,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bosh--odl-mode--6",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BOSH (ODL MODE)",
+    "duration": "3 Years",
+    "fees": "60,400"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-accounting-and-finance--hons---baf--7",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF ACCOUNTING AND FINANCE (HONS) (BAF)",
+    "duration": "3.6 Years",
+    "fees": "54,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-international-business-management--bbm--8",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF INTERNATIONAL BUSINESS MANAGEMENT (BBM)",
+    "duration": "3.6 Years",
+    "fees": "54,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-business-administration--hons---bba--9",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF BUSINESS ADMINISTRATION (HONS) (BBA)",
+    "duration": "3.6 Years",
+    "fees": "54,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-creative-multimedia--hons--10",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF CREATIVE MULTIMEDIA (HONS)",
+    "duration": "3 Years",
+    "fees": "69,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-education--hons--early-childhood-education-11",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF EDUCATION (HONS) EARLY CHILDHOOD EDUCATION",
+    "duration": "3 Years",
+    "fees": "69,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-multimedia--hons--animation-12",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF MULTIMEDIA (HONS) ANIMATION",
+    "duration": "3 Years",
+    "fees": "69,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-art--hons--graphic-design---advertising-13",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF ART (HONS) GRAPHIC DESIGN / ADVERTISING",
+    "duration": "3 Years",
+    "fees": "69,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-information-technology--hons---bit--14",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF INFORMATION TECHNOLOGY (HONS) (BIT)",
+    "duration": "3.5 Years",
+    "fees": "64,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-biomedical-engineering-technology--beet--15",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF BIOMEDICAL ENGINEERING TECHNOLOGY (BEET)",
+    "duration": "4 Years",
+    "fees": "82,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-physiotherapy--hons---bphysio--16",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF PHYSIOTHERAPY (HONS) (BPHYSIO)",
+    "duration": "4 Years",
+    "fees": "95,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-homeopathic-medical-science--bhms--17",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF HOMEOPATHIC MEDICAL SCIENCE (BHMS)",
+    "duration": "5 Years",
+    "fees": "85,000"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-dietetics--hons---bdiet--18",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF DIETETICS (HONS) (BDIET)",
+    "duration": "4 Years",
+    "fees": "93,300"
+  },
+  {
+    "id": "university-of-cyberjaya-bachelor-of-education--hons--tesl-19",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Bachelor Programs",
+    "name": "BACHELOR OF EDUCATION (HONS) TESL",
+    "duration": "3.6 Years",
+    "fees": "54,000"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-business-administration--mba--1",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF BUSINESS ADMINISTRATION (MBA)",
+    "duration": "1 Year",
+    "fees": "15,000"
+  },
+  {
+    "id": "university-of-cyberjaya-mba--odl-mode--2",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MBA (ODL MODE)",
+    "duration": "1.5 Years",
+    "fees": "10,800"
+  },
+  {
+    "id": "university-of-cyberjaya-mba-dual-award-3",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MBA DUAL AWARD",
+    "duration": "1.5 Years",
+    "fees": "34,500"
+  },
+  {
+    "id": "university-of-cyberjaya-mba-dual-award--top-up--4",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MBA DUAL AWARD (TOP-UP)",
+    "duration": "0.5 Year",
+    "fees": "20,000"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-clinical-psychology--mcp--5",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF CLINICAL PSYCHOLOGY (MCP)",
+    "duration": "2 Years",
+    "fees": "55,750"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-business-data-science-6",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF BUSINESS DATA SCIENCE",
+    "duration": "1 Year",
+    "fees": "24,500"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-islamic-finance--mif--7",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF ISLAMIC FINANCE (MIF)",
+    "duration": "1.5 Years",
+    "fees": "22,500"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-occupational-safety-and-health--odl--8",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF OCCUPATIONAL SAFETY AND HEALTH (ODL)",
+    "duration": "1.5 Years",
+    "fees": "28,600"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-occupational-safety-and-health-management-9",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF OCCUPATIONAL SAFETY AND HEALTH MANAGEMENT",
+    "duration": "2 Years",
+    "fees": "38,500"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-science--msc--by-research-10",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF SCIENCE (MSC) BY RESEARCH",
+    "duration": "2 Years",
+    "fees": "32,200"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-medical-science--mms--by-research-11",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF MEDICAL SCIENCE (MMS) BY RESEARCH",
+    "duration": "2 Years",
+    "fees": "24,700"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-science-in-public-health--mph--12",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF SCIENCE IN PUBLIC HEALTH (MPH)",
+    "duration": "1 Year",
+    "fees": "41,000"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-clinical-pharmacy--mclinpharm--13",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF CLINICAL PHARMACY (MCLINPHARM)",
+    "duration": "2 Years",
+    "fees": "33,000"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-pharmaceutical-science-by-research-14",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF PHARMACEUTICAL SCIENCE BY RESEARCH",
+    "duration": "2 Years",
+    "fees": "26,000"
+  },
+  {
+    "id": "university-of-cyberjaya-master-of-physiotherapy--mphs--15",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Postgraduate Programs",
+    "name": "MASTER OF PHYSIOTHERAPY (MPHS)",
+    "duration": "1.5 Years",
+    "fees": "18,500"
+  },
+  {
+    "id": "university-of-cyberjaya-doctor-of-business-administration--dba--1",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Doctorate Programs (PhD)",
+    "name": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
+    "duration": "3 Years",
+    "fees": "44,000"
+  },
+  {
+    "id": "university-of-cyberjaya-doctor-of-philosophy--phd--management-2",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Doctorate Programs (PhD)",
+    "name": "DOCTOR OF PHILOSOPHY (PHD) MANAGEMENT",
+    "duration": "3 Years",
+    "fees": "39,000"
+  },
+  {
+    "id": "university-of-cyberjaya-phd--general--3",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Doctorate Programs (PhD)",
+    "name": "PHD (GENERAL)",
+    "duration": "3 Years",
+    "fees": "35,000"
+  },
+  {
+    "id": "university-of-cyberjaya-phd-medical-science-4",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Doctorate Programs (PhD)",
+    "name": "PHD MEDICAL SCIENCE",
+    "duration": "3 Years",
+    "fees": "39,000"
+  },
+  {
+    "id": "university-of-cyberjaya-phd-pharmaceutical-science-5",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Doctorate Programs (PhD)",
+    "name": "PHD PHARMACEUTICAL SCIENCE",
+    "duration": "3 Years",
+    "fees": "49,000"
+  },
+  {
+    "id": "university-of-cyberjaya-doctor-of-pharmacy--pharmad--6",
+    "university": "UNIVERSITY OF CYBERJAYA",
+    "level": "Doctorate Programs (PhD)",
+    "name": "DOCTOR OF PHARMACY (PHARMAD)",
+    "duration": "2 Years",
+    "fees": "46,000"
+  },
+  {
+    "id": "inti-international-university-foundation-in-business-1",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Foundation in Business",
+    "duration": "1 year",
+    "fees": "RM17,810"
+  },
+  {
+    "id": "inti-international-university-foundation-in-information-technology-2",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Foundation in Information Technology",
+    "duration": "1 year",
+    "fees": "RM17,810"
+  },
+  {
+    "id": "inti-international-university-foundation-in-science-3",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Foundation in Science",
+    "duration": "1 year",
+    "fees": "RM19,305"
+  },
+  {
+    "id": "inti-international-university-cambridge-a-level--3-subjects--4",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Cambridge A-Level (3 Subjects)",
+    "duration": "1.5 years",
+    "fees": "RM21,087"
+  },
+  {
+    "id": "inti-international-university-cambridge-a-level--4-subjects--5",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Cambridge A-Level (4 Subjects)",
+    "duration": "1.5 years",
+    "fees": "RM28,116"
+  },
+  {
+    "id": "inti-international-university-certificate-in-business-studies-6",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Certificate in Business Studies",
+    "duration": "1.3 years",
+    "fees": "RM14,097"
+  },
+  {
+    "id": "inti-international-university-diploma-in-business-7",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Business",
+    "duration": "2 years",
+    "fees": "RM33,510"
+  },
+  {
+    "id": "inti-international-university-diploma-in-finance-8",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Finance",
+    "duration": "2 years",
+    "fees": "RM34,292"
+  },
+  {
+    "id": "inti-international-university-diploma-in-marketing-9",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Marketing",
+    "duration": "2 years",
+    "fees": "RM34,292"
+  },
+  {
+    "id": "inti-international-university-diploma-in-e-commerce-10",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in E-Commerce",
+    "duration": "2 years",
+    "fees": "RM35,097"
+  },
+  {
+    "id": "inti-international-university-tafe-nsw-advance-diploma-in-accounting-11",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "TAFE NSW Advance Diploma in Accounting",
+    "duration": "2 years",
+    "fees": "RM36,224"
+  },
+  {
+    "id": "inti-international-university-3-0-ba--hons--business-administration--uoh--uk--12",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "3+0 BA (Hons) Business Administration (UOH, UK)",
+    "duration": "3 years",
+    "fees": "RM68,785"
+  },
+  {
+    "id": "inti-international-university-3-0-ba--hons--accounting---finance--uoh--uk--13",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "3+0 BA (Hons) Accounting & Finance (UOH, UK)",
+    "duration": "3 years",
+    "fees": "RM69,436"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-business-3-0--swinburne--aus--14",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Bachelor of Business 3+0 (Swinburne, AUS)",
+    "duration": "3 years",
+    "fees": "RM69,722"
+  },
+  {
+    "id": "inti-international-university-diploma-in-mass-communication-15",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Mass Communication",
+    "duration": "2 years",
+    "fees": "RM34,482"
+  },
+  {
+    "id": "inti-international-university-diploma-in-digital-media-16",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Digital Media",
+    "duration": "2 years",
+    "fees": "RM40,884"
+  },
+  {
+    "id": "inti-international-university-3-0-ba--hons--mass-communication--uoh--uk--17",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "3+0 BA (Hons) Mass Communication (UOH, UK)",
+    "duration": "3 years",
+    "fees": "RM70,632"
+  },
+  {
+    "id": "inti-international-university-3-0-bachelor-of-media-and-communication--swinburne--aus--18",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "3+0 Bachelor of Media and Communication (Swinburne, AUS)",
+    "duration": "3 years",
+    "fees": "RM69,725"
+  },
+  {
+    "id": "inti-international-university-4-0-ba-in-psychology--snhu--us--19",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "4+0 BA in Psychology (SNHU, US)",
+    "duration": "4 years",
+    "fees": "RM82,388"
+  },
+  {
+    "id": "inti-international-university-diploma-in-culinary-arts-20",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Culinary Arts",
+    "duration": "2 years",
+    "fees": "RM46,588"
+  },
+  {
+    "id": "inti-international-university-diploma-in-hotel-management-21",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Hotel Management",
+    "duration": "2 years",
+    "fees": "RM35,836"
+  },
+  {
+    "id": "inti-international-university-certificate-in-information-technology-22",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Certificate in Information Technology",
+    "duration": "1.6 years",
+    "fees": "RM14,486"
+  },
+  {
+    "id": "inti-international-university-diploma-in-information-technology-23",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Information Technology",
+    "duration": "2 years",
+    "fees": "RM34,140"
+  },
+  {
+    "id": "inti-international-university-diploma-in-computer-science-24",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Computer Science",
+    "duration": "2 years",
+    "fees": "RM39,000"
+  },
+  {
+    "id": "inti-international-university-3-0-bsc--hons--in-computer-science--coventry--uk--25",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "3+0 BSc (Hons) in Computer Science (Coventry, UK)",
+    "duration": "3 years",
+    "fees": "RM70,266"
+  },
+  {
+    "id": "inti-international-university-diploma-in-electrical---electronic-engineering-26",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Electrical & Electronic Engineering",
+    "duration": "2.5 years",
+    "fees": "RM37,440"
+  },
+  {
+    "id": "inti-international-university-diploma-in-mechanical-engineering-27",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Diploma in Mechanical Engineering",
+    "duration": "2.5 years",
+    "fees": "RM38,049"
+  },
+  {
+    "id": "inti-international-university-4-0-meng-in-electrical-and-electronic-engineering--coventry--uk--28",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "4+0 MEng in Electrical and Electronic Engineering (Coventry, UK)",
+    "duration": "4 years",
+    "fees": "RM101,996"
+  },
+  {
+    "id": "inti-international-university-4-0-meng-in-mechanical-engineering--coventry--uk--29",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "4+0 MEng in Mechanical Engineering (Coventry, UK)",
+    "duration": "4 years",
+    "fees": "RM102,009"
+  },
+  {
+    "id": "inti-international-university-american-degree-transfer-program--aup--30",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "American Degree Transfer Program (AUP)",
+    "duration": "2 years",
+    "fees": "RM41,858"
+  },
+  {
+    "id": "inti-international-university-intensive-english-programme--per-level--31",
+    "university": "INTI International University",
+    "level": "INTI – PENANG CAMPUS",
+    "name": "Intensive English Programme (per level)",
+    "duration": "8 weeks",
+    "fees": "RM5,000"
+  },
+  {
+    "id": "inti-international-university-foundation--business-arts-science-it--1",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Foundation (Business/Arts/Science/IT)",
+    "duration": "1 year",
+    "fees": "RM19,942"
+  },
+  {
+    "id": "inti-international-university-diploma-in-business---accounting-2",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Diploma in Business / Accounting",
+    "duration": "2 years",
+    "fees": "RM38,264"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-business--hons---all-majors--3",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Business (Hons) (All Majors)",
+    "duration": "3 years",
+    "fees": "RM75,854"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-accountancy--hons--4",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Accountancy (Hons)",
+    "duration": "4 years",
+    "fees": "RM89,190"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-accounting---finance--hons--5",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Accounting & Finance (Hons)",
+    "duration": "3 years",
+    "fees": "RM79,586"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-banking-and-finance--hons--6",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Banking and Finance (Hons)",
+    "duration": "3 years",
+    "fees": "RM79,602"
+  },
+  {
+    "id": "inti-international-university-australian-degree-transfer-programme--commerce--7",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Australian Degree Transfer Programme (Commerce)",
+    "duration": "2 years",
+    "fees": "RM48,417"
+  },
+  {
+    "id": "inti-international-university-diploma-in-mass-communication-8",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Diploma in Mass Communication",
+    "duration": "2 years",
+    "fees": "RM38,398"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-mass-communication--hons--9",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Mass Communication (Hons)",
+    "duration": "3 years",
+    "fees": "RM75,860"
+  },
+  {
+    "id": "inti-international-university-diploma-in-mechanical-engineering-10",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Diploma in Mechanical Engineering",
+    "duration": "2.5 years",
+    "fees": "RM42,622"
+  },
+  {
+    "id": "inti-international-university-diploma-in-civil-engineering-11",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Diploma in Civil Engineering",
+    "duration": "2.5 years",
+    "fees": "RM43,831"
+  },
+  {
+    "id": "inti-international-university-diploma-in-quantity-surveying-12",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Diploma in Quantity Surveying",
+    "duration": "2.5 years",
+    "fees": "RM43,062"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-mechanical---civil-engineering-with-hons-13",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Mechanical / Civil Engineering with Hons",
+    "duration": "4 years",
+    "fees": "RM90,783"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-science--hons--quantity-surveying-14",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Science (Hons) Quantity Surveying",
+    "duration": "3.5 years",
+    "fees": "RM79,966"
+  },
+  {
+    "id": "inti-international-university-diploma-in-information-technology-15",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Diploma in Information Technology",
+    "duration": "2 years",
+    "fees": "RM39,855"
+  },
+  {
+    "id": "inti-international-university-diploma-in-computer-science-16",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Diploma in Computer Science",
+    "duration": "2 years",
+    "fees": "RM42,640"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-computer-science--hons--17",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Computer Science (Hons)",
+    "duration": "3 years",
+    "fees": "RM78,036"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-information-technology--hons--18",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Information Technology (Hons)",
+    "duration": "3 years",
+    "fees": "RM76,328"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-biotechnology--hons--19",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Biotechnology (Hons)",
+    "duration": "3 years",
+    "fees": "RM84,932"
+  },
+  {
+    "id": "inti-international-university-bachelor-of-traditional-chinese-medicines--hons--20",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Bachelor of Traditional Chinese Medicines (Hons)",
+    "duration": "5 years",
+    "fees": "RM137,824"
+  },
+  {
+    "id": "inti-international-university-bsc--hons--in-physiotherapy-21",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "BSc (Hons) in Physiotherapy",
+    "duration": "4 years",
+    "fees": "RM95,479"
+  },
+  {
+    "id": "inti-international-university-master-of-business-administration--mba--22",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Master of Business Administration (MBA)",
+    "duration": "1 year",
+    "fees": "RM40,196"
+  },
+  {
+    "id": "inti-international-university-master-of-business-administration--dual-award--23",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Master of Business Administration (Dual Award)",
+    "duration": "1 year",
+    "fees": "RM45,734"
+  },
+  {
+    "id": "inti-international-university-doctor-of-philosophy--phd---by-research--24",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Doctor of Philosophy (PhD) (By Research)",
+    "duration": "3 years",
+    "fees": "RM59,796"
+  },
+  {
+    "id": "inti-international-university-intensive-english-program--per-level--25",
+    "university": "INTI International University",
+    "level": "INTI – NILAI CAMPUS",
+    "name": "Intensive English Program (per level)",
+    "duration": "8 weeks",
+    "fees": "RM5,000"
+  },
+  {
+    "id": "inti-international-university-foundation--business-it-design-arts-science--1",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Foundation (Business/IT/Design/Arts/Science)",
+    "duration": "1 year",
+    "fees": "RM21,112"
+  },
+  {
+    "id": "inti-international-university-cambridge-a-level--3-subjects--2",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Cambridge A-Level (3 Subjects)",
+    "duration": "1.5 years",
+    "fees": "RM29,997"
+  },
+  {
+    "id": "inti-international-university-cambridge-a-level--4-subjects--3",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Cambridge A-Level (4 Subjects)",
+    "duration": "1.5 years",
+    "fees": "RM39,996"
+  },
+  {
+    "id": "inti-international-university-diploma-in-graphic-design-4",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Graphic Design",
+    "duration": "2.3 years",
+    "fees": "RM47,625"
+  },
+  {
+    "id": "inti-international-university-diploma-in-interior-design-5",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Interior Design",
+    "duration": "2.3 years",
+    "fees": "RM42,795"
+  },
+  {
+    "id": "inti-international-university-diploma-in-fashion-design-6",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Fashion Design",
+    "duration": "2.3 years",
+    "fees": "RM49,437"
+  },
+  {
+    "id": "inti-international-university-diploma-in-business-7",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Business",
+    "duration": "2 years",
+    "fees": "RM35,787"
+  },
+  {
+    "id": "inti-international-university-3-0-ba--hons---uoh--uk--accounting---finance-8",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "3+0 BA (Hons) (UOH, UK) Accounting & Finance",
+    "duration": "3 years",
+    "fees": "RM81,370"
+  },
+  {
+    "id": "inti-international-university-4-0-bsc-in-business-administration--snhu--us--9",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "4+0 BSc in Business Administration (SNHU, US)",
+    "duration": "4 years",
+    "fees": "RM93,560"
+  },
+  {
+    "id": "inti-international-university-diploma-in-mass-communication-10",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Mass Communication",
+    "duration": "2 years",
+    "fees": "RM41,940"
+  },
+  {
+    "id": "inti-international-university-4-0-ba-in-communication--snhu--us--11",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "4+0 BA in Communication (SNHU, US)",
+    "duration": "4 years",
+    "fees": "RM93,560"
+  },
+  {
+    "id": "inti-international-university-4-0-ba-in-psychology--snhu--us--12",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "4+0 BA in Psychology (SNHU, US)",
+    "duration": "4 years",
+    "fees": "RM95,744"
+  },
+  {
+    "id": "inti-international-university-diploma-in-mechanical-engineering-13",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Mechanical Engineering",
+    "duration": "2.5 years",
+    "fees": "RM39,498"
+  },
+  {
+    "id": "inti-international-university-diploma-in-information-technology-14",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Information Technology",
+    "duration": "2 years",
+    "fees": "RM42,260"
+  },
+  {
+    "id": "inti-international-university-diploma-in-computer-science-15",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Computer Science",
+    "duration": "2 years",
+    "fees": "RM44,380"
+  },
+  {
+    "id": "inti-international-university-3-0-bachelor-of-computer-science--swinburne--aus--16",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "3+0 Bachelor of Computer Science (Swinburne, AUS)",
+    "duration": "3 years",
+    "fees": "RM86,900"
+  },
+  {
+    "id": "inti-international-university-american-degree-transfer-program--aup--17",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "American Degree Transfer Program (AUP)",
+    "duration": "2 years",
+    "fees": "RM44,380"
+  },
+  {
+    "id": "inti-international-university-diploma-in-culinary-arts-18",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Culinary Arts",
+    "duration": "2 years",
+    "fees": "RM47,396"
+  },
+  {
+    "id": "inti-international-university-diploma-in-hotel-management-19",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Diploma in Hotel Management",
+    "duration": "2 years",
+    "fees": "RM43,744"
+  },
+  {
+    "id": "inti-international-university-intensive-english-program--per-level--20",
+    "university": "INTI International University",
+    "level": "INTI – SUBANG CAMPUS",
+    "name": "Intensive English Program (per level)",
+    "duration": "8 weeks",
+    "fees": "RM5,000"
+  },
+  {
+    "id": "klust-foundation-in-arts-1",
+    "university": "KLUST",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts",
+    "duration": "N/A",
+    "fees": "RM 10,143"
+  },
+  {
+    "id": "klust-foundation-in-science-2",
+    "university": "KLUST",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Science",
+    "duration": "N/A",
+    "fees": "RM 11,844"
+  },
+  {
+    "id": "klust-incentive-english-program-3",
+    "university": "KLUST",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Incentive English Program",
+    "duration": "N/A",
+    "fees": "RM 12,000"
+  },
+  {
+    "id": "klust-diploma-in-architecture-1",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Architecture",
+    "duration": "N/A",
+    "fees": "RM 30,200"
+  },
+  {
+    "id": "klust-diploma-in-landscape-architecture-2",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Landscape Architecture",
+    "duration": "N/A",
+    "fees": "RM 23,104"
+  },
+  {
+    "id": "klust-diploma-in-quantity-surveying-3",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Quantity Surveying",
+    "duration": "N/A",
+    "fees": "RM 22,282"
+  },
+  {
+    "id": "klust-diploma-in-automotive-engineering-4",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Automotive Engineering",
+    "duration": "N/A",
+    "fees": "RM 20,646"
+  },
+  {
+    "id": "klust-diploma-agricultural-science--plantation-management--5",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma Agricultural Science (Plantation Management)",
+    "duration": "N/A",
+    "fees": "RM 20,192"
+  },
+  {
+    "id": "klust-diploma-in-civil-engineering-6",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Civil Engineering",
+    "duration": "N/A",
+    "fees": "RM 21,101"
+  },
+  {
+    "id": "klust-diploma-in-electrical---electronics-engineering-7",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Electrical & Electronics Engineering",
+    "duration": "N/A",
+    "fees": "RM 20,542"
+  },
+  {
+    "id": "klust-diploma-in-mechanical-engineering-8",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Mechanical Engineering",
+    "duration": "N/A",
+    "fees": "RM 20,419"
+  },
+  {
+    "id": "klust-diploma-in-accounting-9",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Accounting",
+    "duration": "N/A",
+    "fees": "RM 20,647"
+  },
+  {
+    "id": "klust-diploma-in-business-administration-10",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Business Administration",
+    "duration": "N/A",
+    "fees": "RM 18,825"
+  },
+  {
+    "id": "klust-diploma-in-corporate-communication-11",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Corporate Communication",
+    "duration": "N/A",
+    "fees": "RM 20,646"
+  },
+  {
+    "id": "klust-diploma-in-english-for-professional-communication-12",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in English for Professional Communication",
+    "duration": "N/A",
+    "fees": "RM 19,963"
+  },
+  {
+    "id": "klust-diploma-in-information-technology-13",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Information Technology",
+    "duration": "N/A",
+    "fees": "RM 19,964"
+  },
+  {
+    "id": "klust-diploma-in-sports-management-14",
+    "university": "KLUST",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Sports Management",
+    "duration": "N/A",
+    "fees": "RM 16,443"
+  },
+  {
+    "id": "klust-bachelor-of-technology--hons--in-automotive-1",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Technology (Hons) in Automotive",
+    "duration": "3 years",
+    "fees": "RM 41,832"
+  },
+  {
+    "id": "klust-bachelor-of-electronics-engineering-with-honours-2",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Electronics Engineering with Honours",
+    "duration": "4 years",
+    "fees": "RM 50,400"
+  },
+  {
+    "id": "klust-bachelor-of-civil-engineering-with-honours-3",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Civil Engineering with Honours",
+    "duration": "4 years",
+    "fees": "RM 58,022"
+  },
+  {
+    "id": "klust-bachelor-of-mechanical-engineering-with-honours-4",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Mechanical Engineering with Honours",
+    "duration": "3.5 years",
+    "fees": "RM 48,785"
+  },
+  {
+    "id": "klust-bachelor-of-agricultural-science--plantation-management--hons--5",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Agricultural Science (Plantation Management (Hons)",
+    "duration": "3 years",
+    "fees": "RM 40,017"
+  },
+  {
+    "id": "klust-bachelor-of-computer-science--hons--6",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Computer Science (Hons)",
+    "duration": "3 years",
+    "fees": "RM 40,752"
+  },
+  {
+    "id": "klust-bachelor-of-software-engineering-7",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Software Engineering",
+    "duration": "3 years",
+    "fees": "RM 41,120"
+  },
+  {
+    "id": "klust-bachelor-of-technology--hons--in-electro-mechanical-8",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Technology (Hons) in Electro-Mechanical",
+    "duration": "3.5 years",
+    "fees": "RM 45,234"
+  },
+  {
+    "id": "klust-bachelor-of-science--architectural-studies--9",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Science (Architectural Studies)",
+    "duration": "3 years",
+    "fees": "RM 53,134"
+  },
+  {
+    "id": "klust-bachelor-of-landscape-architecture-10",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Landscape Architecture",
+    "duration": "3 years",
+    "fees": "RM 45,969"
+  },
+  {
+    "id": "klust-bachelor-of-quantity-surveying--hons--11",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Quantity Surveying (Hons)",
+    "duration": "3 years",
+    "fees": "RM 42,225"
+  },
+  {
+    "id": "klust-bachelor-of-technology--hons--in-construction-management-12",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Technology (Hons) in Construction Management",
+    "duration": "3 years",
+    "fees": "RM 42,208"
+  },
+  {
+    "id": "klust-ba--hons--tesol-13",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "BA (Hons) TESOL",
+    "duration": "3 years",
+    "fees": "RM 34,140"
+  },
+  {
+    "id": "klust-bachelor-of-accountancy--hons--14",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Accountancy (Hons)",
+    "duration": "3.5 years",
+    "fees": "RM 41,860"
+  },
+  {
+    "id": "klust-bachelor-of-business-administration--hons--15",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Business Administration (Hons)",
+    "duration": "3 years",
+    "fees": "RM 35,744"
+  },
+  {
+    "id": "klust-bachelor-of-business-administration--hons--in-e-commerce-16",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Business Administration (Hons) in E-Commerce",
+    "duration": "3 years",
+    "fees": "RM 35,744"
+  },
+  {
+    "id": "klust-bachelor-of-communication--hons--in-corporate-communication-17",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Communication (Hons) in Corporate Communication",
+    "duration": "3 years",
+    "fees": "RM 36,606"
+  },
+  {
+    "id": "klust-bachelor-of-communication--hons--in-integrated-marketing-communication-18",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Communication (Hons) in Integrated Marketing Communication",
+    "duration": "3 years",
+    "fees": "RM 34,735"
+  },
+  {
+    "id": "klust-bachelor-of-science--hons--in-logistics-and-supply-chain-management-19",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Science (Hons) in Logistics and Supply Chain Management",
+    "duration": "3 years",
+    "fees": "RM 40,026"
+  },
+  {
+    "id": "klust-ba--hons--english-for-professional-communication-20",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "BA (Hons) English for Professional Communication",
+    "duration": "3 years",
+    "fees": "RM 35,032"
+  },
+  {
+    "id": "klust-bachelor-of-science--hons--in-economics-and-finance-21",
+    "university": "KLUST",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Science (Hons) in Economics and Finance",
+    "duration": "3 years",
+    "fees": "RM 40,026"
+  },
+  {
+    "id": "klust-master-of-science-in-built-environment--by-research--1",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Science in Built Environment (By Research)",
+    "duration": "2 years",
+    "fees": "RM 21,917"
+  },
+  {
+    "id": "klust-master-in-electronics-engineering--by-research--2",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master in Electronics Engineering (By Research)",
+    "duration": "2 years",
+    "fees": "RM 22,220"
+  },
+  {
+    "id": "klust-master-of-civil-engineering--by-research--3",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Civil Engineering (By Research)",
+    "duration": "2 years",
+    "fees": "RM 22,220"
+  },
+  {
+    "id": "klust-master-of-architecture-4",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Architecture",
+    "duration": "2 years",
+    "fees": "RM 23,830"
+  },
+  {
+    "id": "klust-master-of-business-administration-5",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Business Administration",
+    "duration": "1 year",
+    "fees": "RM 18,303"
+  },
+  {
+    "id": "klust-master-in-communication-6",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master in Communication",
+    "duration": "2 years",
+    "fees": "RM 19,084"
+  },
+  {
+    "id": "klust-master-in-information-technology-7",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master in Information Technology",
+    "duration": "2 years",
+    "fees": "RM 18,483"
+  },
+  {
+    "id": "klust-master-of-science-in-water-resources-8",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Science in Water Resources",
+    "duration": "2 years",
+    "fees": "RM 19,280"
+  },
+  {
+    "id": "klust-master-of-arts-in-teaching-english-to-speakers-of-other-languages--ma-tesol--9",
+    "university": "KLUST",
+    "level": "MASTER PROGRAMS",
+    "name": "Master of Arts in Teaching English to Speakers of Other Languages (MA TESOL)",
+    "duration": "2 years",
+    "fees": "RM 17,180"
+  },
+  {
+    "id": "klust-doctor-of-philosophy-in-business-administration-1",
+    "university": "KLUST",
+    "level": "PhD PROGRAMS",
+    "name": "Doctor of Philosophy in Business Administration",
+    "duration": "N/A",
+    "fees": "RM 25,828"
+  },
+  {
+    "id": "klust-doctor-of-philosophy-in-civil-engineering-2",
+    "university": "KLUST",
+    "level": "PhD PROGRAMS",
+    "name": "Doctor of Philosophy in Civil Engineering",
+    "duration": "N/A",
+    "fees": "RM 35,352"
+  },
+  {
+    "id": "klust-doctor-of-philosophy-in-communication-3",
+    "university": "KLUST",
+    "level": "PhD PROGRAMS",
+    "name": "Doctor of Philosophy in Communication",
+    "duration": "N/A",
+    "fees": "RM 24,888"
+  },
+  {
+    "id": "klust-doctor-of-philosophy-in-education-4",
+    "university": "KLUST",
+    "level": "PhD PROGRAMS",
+    "name": "Doctor of Philosophy in Education",
+    "duration": "N/A",
+    "fees": "RM 20,376"
+  },
+  {
+    "id": "klust-doctor-of-philosophy-in-information-technology-5",
+    "university": "KLUST",
+    "level": "PhD PROGRAMS",
+    "name": "Doctor of Philosophy in Information Technology",
+    "duration": "N/A",
+    "fees": "RM 24,888"
+  },
+  {
+    "id": "segi-university-foundation-in-science-1",
+    "university": "SEGi University",
+    "level": "FOUNDATION & LANGUAGES",
+    "name": "FOUNDATION IN SCIENCE",
+    "duration": "1 Year",
+    "fees": "36,910"
+  },
+  {
+    "id": "segi-university-foundation-in-arts-2",
+    "university": "SEGi University",
+    "level": "FOUNDATION & LANGUAGES",
+    "name": "FOUNDATION IN ARTS",
+    "duration": "1 Year",
+    "fees": "35,250"
+  },
+  {
+    "id": "segi-university-intensive-english-programme--full-module--3",
+    "university": "SEGi University",
+    "level": "FOUNDATION & LANGUAGES",
+    "name": "INTENSIVE ENGLISH PROGRAMME (Full Module)",
+    "duration": "-",
+    "fees": "27,625"
+  },
+  {
+    "id": "segi-university-bachelor-of-medicine---bachelor-of-surgery--mbbs--1",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Medicine & Bachelor of Surgery (MBBS)",
+    "duration": "N/A",
+    "fees": "378,400"
+  },
+  {
+    "id": "segi-university-bachelor-of-dental-surgery--bds--2",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Dental Surgery (BDS)",
+    "duration": "N/A",
+    "fees": "382,150"
+  },
+  {
+    "id": "segi-university-bachelor-of-optometry--hons--3",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Optometry (Hons)",
+    "duration": "N/A",
+    "fees": "128,250"
+  },
+  {
+    "id": "segi-university-bachelor-of-pharmacy--hons--4",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Pharmacy (Hons)",
+    "duration": "N/A",
+    "fees": "158,250"
+  },
+  {
+    "id": "segi-university-bachelor-of-biomedical-science--hons--5",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Biomedical Science (Hons)",
+    "duration": "N/A",
+    "fees": "119,550"
+  },
+  {
+    "id": "segi-university-bachelor-of-business-management--hons--6",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Business Management (Hons)",
+    "duration": "N/A",
+    "fees": "85,925"
+  },
+  {
+    "id": "segi-university-bachelor-of-accounting-and-finance--hons--7",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Accounting and Finance (Hons)",
+    "duration": "N/A",
+    "fees": "81,450"
+  },
+  {
+    "id": "segi-university-bachelor-of-arts--hons--visual-communications-design-8",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Arts (Hons) Visual Communications Design",
+    "duration": "N/A",
+    "fees": "86,550"
+  },
+  {
+    "id": "segi-university-bachelor-of-arts--hons--multimedia-design-9",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Arts (Hons) Multimedia Design",
+    "duration": "N/A",
+    "fees": "91,950"
+  },
+  {
+    "id": "segi-university-bachelor-of-mass-communications--hons--10",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Mass Communications (Hons)",
+    "duration": "N/A",
+    "fees": "88,705"
+  },
+  {
+    "id": "segi-university-bachelor-of-education--hons--11",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Education (Hons)",
+    "duration": "N/A",
+    "fees": "89,625"
+  },
+  {
+    "id": "segi-university-bachelor-of-psychology--hons--12",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Psychology (Hons)",
+    "duration": "N/A",
+    "fees": "95,050"
+  },
+  {
+    "id": "segi-university-bachelor-of-computer-science--hons--13",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Computer Science (Hons)",
+    "duration": "N/A",
+    "fees": "92,950"
+  },
+  {
+    "id": "segi-university-bachelor-of-information-technology--hons--14",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Information Technology (Hons)",
+    "duration": "N/A",
+    "fees": "85,925"
+  },
+  {
+    "id": "segi-university-bachelor-of-science--hons--architecture-15",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Science (Hons) Architecture",
+    "duration": "N/A",
+    "fees": "104,550"
+  },
+  {
+    "id": "segi-university-bachelor-of-arts--hons--interior-architecture-16",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Arts (Hons) Interior Architecture",
+    "duration": "N/A",
+    "fees": "95,550"
+  },
+  {
+    "id": "segi-university-bachelor-of-quantity-surveying--hons--17",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Quantity Surveying (Hons)",
+    "duration": "N/A",
+    "fees": "84,175"
+  },
+  {
+    "id": "segi-university-bachelor-of-engineering--hons----mechanical-civil-chemical-electrical-18",
+    "university": "SEGi University",
+    "level": "BACHELOR PROGRAMS - UNIVERSITY (SEGi University KD)",
+    "name": "Bachelor of Engineering (Hons) - Mechanical/Civil/Chemical/Electrical",
+    "duration": "N/A",
+    "fees": "113,625"
+  },
+  {
+    "id": "segi-university-mba--general-mgt-finance-marketing-hr-mgt-global-business--1",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "MBA (General Mgt/Finance/Marketing/HR Mgt/Global Business)",
+    "duration": "N/A",
+    "fees": "54,350"
+  },
+  {
+    "id": "segi-university-master-of-accountancy---financial-planning-2",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "Master of Accountancy / Financial Planning",
+    "duration": "N/A",
+    "fees": "56,900"
+  },
+  {
+    "id": "segi-university-ma-in-corporate-communication-3",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "MA in Corporate Communication",
+    "duration": "N/A",
+    "fees": "49,650"
+  },
+  {
+    "id": "segi-university-master-of-education--research--4",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "Master of Education (Research)",
+    "duration": "N/A",
+    "fees": "51,150"
+  },
+  {
+    "id": "segi-university-master-of-education--coursework--5",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "Master of Education (Coursework)",
+    "duration": "N/A",
+    "fees": "47,250"
+  },
+  {
+    "id": "segi-university-msc-in-management-6",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "MSc in Management",
+    "duration": "N/A",
+    "fees": "55,100"
+  },
+  {
+    "id": "segi-university-msc-in-it---vision-science-7",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "MSc in IT / Vision Science",
+    "duration": "N/A",
+    "fees": "52,060"
+  },
+  {
+    "id": "segi-university-msc-in-engineering-8",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "MSc in Engineering",
+    "duration": "N/A",
+    "fees": "59,950"
+  },
+  {
+    "id": "segi-university-msc-pharmaceutical-sciences-9",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "MSc Pharmaceutical Sciences",
+    "duration": "N/A",
+    "fees": "51,950"
+  },
+  {
+    "id": "segi-university-master-of-laws-10",
+    "university": "SEGi University",
+    "level": "MASTER'S PROGRAMS (SEGi University KD)",
+    "name": "Master of Laws",
+    "duration": "N/A",
+    "fees": "54,250"
+  },
+  {
+    "id": "segi-university-doctor-of-business-administration--dba--1",
+    "university": "SEGi University",
+    "level": "DOCTORAL PROGRAMS (SEGi University KD)",
+    "name": "Doctor of Business Administration (DBA)",
+    "duration": "N/A",
+    "fees": "81,850"
+  },
+  {
+    "id": "segi-university-phd--management--2",
+    "university": "SEGi University",
+    "level": "DOCTORAL PROGRAMS (SEGi University KD)",
+    "name": "PhD (Management)",
+    "duration": "N/A",
+    "fees": "70,650"
+  },
+  {
+    "id": "segi-university-phd--information-technology--3",
+    "university": "SEGi University",
+    "level": "DOCTORAL PROGRAMS (SEGi University KD)",
+    "name": "PhD (Information Technology)",
+    "duration": "N/A",
+    "fees": "60,550"
+  },
+  {
+    "id": "segi-university-phd--education---engineering--4",
+    "university": "SEGi University",
+    "level": "DOCTORAL PROGRAMS (SEGi University KD)",
+    "name": "PhD (Education / Engineering)",
+    "duration": "N/A",
+    "fees": "78,450"
+  },
+  {
+    "id": "taylor-s-university-foundation-in-business-1",
+    "university": "Taylor's University",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Business",
+    "duration": "1 year",
+    "fees": "RM44,044"
+  },
+  {
+    "id": "taylor-s-university-foundation-in-arts-2",
+    "university": "Taylor's University",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Arts",
+    "duration": "1 year",
+    "fees": "RM44,044"
+  },
+  {
+    "id": "taylor-s-university-foundation-in-design-3",
+    "university": "Taylor's University",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Design",
+    "duration": "1 year",
+    "fees": "RM44,044"
+  },
+  {
+    "id": "taylor-s-university-foundation-in-computing-4",
+    "university": "Taylor's University",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Computing",
+    "duration": "1 year",
+    "fees": "RM41,044"
+  },
+  {
+    "id": "taylor-s-university-foundation-in-science-5",
+    "university": "Taylor's University",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Science",
+    "duration": "1 year",
+    "fees": "RM47,044"
+  },
+  {
+    "id": "taylor-s-university-foundation-in-engineering-6",
+    "university": "Taylor's University",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Engineering",
+    "duration": "1 year",
+    "fees": "RM47,044"
+  },
+  {
+    "id": "taylor-s-university-foundation-in-natural---built-environments-7",
+    "university": "Taylor's University",
+    "level": "FOUNDATION PROGRAMS",
+    "name": "Foundation in Natural & Built Environments",
+    "duration": "1 year",
+    "fees": "RM44,044"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-accounting-1",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Accounting",
+    "duration": "2 years",
+    "fees": "RM73,806"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-business-2",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Business",
+    "duration": "2 years",
+    "fees": "RM73,806"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-communication-3",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Communication",
+    "duration": "2 years",
+    "fees": "RM73,806"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-information-technology-4",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Information Technology",
+    "duration": "2 years",
+    "fees": "RM73,806"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-interior-design-5",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Interior Design",
+    "duration": "2.5 years",
+    "fees": "RM73,806"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-hotel-management-6",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Hotel Management",
+    "duration": "2 years",
+    "fees": "RM73,806"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-culinary-arts-7",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Culinary Arts",
+    "duration": "2 years",
+    "fees": "RM79,136"
+  },
+  {
+    "id": "taylor-s-university-diploma-in-early-childhood-education-8",
+    "university": "Taylor's University",
+    "level": "DIPLOMA PROGRAMS",
+    "name": "Diploma in Early Childhood Education",
+    "duration": "2 years",
+    "fees": "RM55,848"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-business--hons--1",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Business (Hons)",
+    "duration": "3 years",
+    "fees": "RM143,946"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-accounting---finance--hons--2",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Accounting & Finance (Hons)",
+    "duration": "3 years",
+    "fees": "RM139,042"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-laws--hons--3",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Laws (Hons)",
+    "duration": "3 years",
+    "fees": "RM146,106"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-computer-science--hons--4",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Computer Science (Hons)",
+    "duration": "3 years",
+    "fees": "RM135,738"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-software-engineering--hons--5",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Software Engineering (Hons)",
+    "duration": "3 years",
+    "fees": "RM135,738"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-mechanical-engineering--hons--6",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Mechanical Engineering (Hons)",
+    "duration": "4 years",
+    "fees": "RM183,562"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-pharmacy--hons--7",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Pharmacy (Hons)",
+    "duration": "4 years",
+    "fees": "RM213,194"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-medicine--bachelor-of-surgery--mbbs--8",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+    "duration": "5 years",
+    "fees": "RM456,934"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-psychology--hons--9",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Psychology (Hons)",
+    "duration": "3 years",
+    "fees": "RM124,506"
+  },
+  {
+    "id": "taylor-s-university-bachelor-of-mass-communication--hons--10",
+    "university": "Taylor's University",
+    "level": "BACHELOR PROGRAMS",
+    "name": "Bachelor of Mass Communication (Hons)",
+    "duration": "3 years",
+    "fees": "RM133,794"
+  },
+  {
+    "id": "taylor-s-university-master-of-business-administration--mba--1",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Business Administration (MBA)",
+    "duration": "1 year",
+    "fees": "RM70,014"
+  },
+  {
+    "id": "taylor-s-university-master-of-management-2",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Management",
+    "duration": "1 year",
+    "fees": "RM70,014"
+  },
+  {
+    "id": "taylor-s-university-master-of-communication-3",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Communication",
+    "duration": "1.5 years",
+    "fees": "RM59,284"
+  },
+  {
+    "id": "taylor-s-university-master-of-applied-computing-4",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Applied Computing",
+    "duration": "1 year",
+    "fees": "RM61,105"
+  },
+  {
+    "id": "taylor-s-university-master-of-international-hospitality-management-5",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of International Hospitality Management",
+    "duration": "1.5 years",
+    "fees": "RM73,724"
+  },
+  {
+    "id": "taylor-s-university-master-of-computer-science--research--6",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Computer Science (Research)",
+    "duration": "2 years",
+    "fees": "RM50,694"
+  },
+  {
+    "id": "taylor-s-university-master-of-science--research--7",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Master of Science (Research)",
+    "duration": "2 years",
+    "fees": "RM50,694"
+  },
+  {
+    "id": "taylor-s-university-postgraduate-certificate-in-teaching---learning-8",
+    "university": "Taylor's University",
+    "level": "MASTERS PROGRAMS",
+    "name": "Postgraduate Certificate in Teaching & Learning",
+    "duration": "9 months",
+    "fees": "RM35,474"
+  },
+  {
+    "id": "taylor-s-university-doctor-of-business-administration--dba--1",
+    "university": "Taylor's University",
+    "level": "PHD PROGRAMS",
+    "name": "Doctor of Business Administration (DBA)",
+    "duration": "3 years",
+    "fees": "RM91,614"
+  },
+  {
+    "id": "taylor-s-university-phd-in-business--research--2",
+    "university": "Taylor's University",
+    "level": "PHD PROGRAMS",
+    "name": "PhD in Business (Research)",
+    "duration": "3 years",
+    "fees": "RM68,944"
+  },
+  {
+    "id": "taylor-s-university-phd-in-computer-science--research--3",
+    "university": "Taylor's University",
+    "level": "PHD PROGRAMS",
+    "name": "PhD in Computer Science (Research)",
+    "duration": "3 years",
+    "fees": "RM68,944"
+  },
+  {
+    "id": "taylor-s-university-phd-in-education--research--4",
+    "university": "Taylor's University",
+    "level": "PHD PROGRAMS",
+    "name": "PhD in Education (Research)",
+    "duration": "3 years",
+    "fees": "RM68,944"
+  },
+  {
+    "id": "taylor-s-university-phd-in-engineering--research--5",
+    "university": "Taylor's University",
+    "level": "PHD PROGRAMS",
+    "name": "PhD in Engineering (Research)",
+    "duration": "3 years",
+    "fees": "RM68,944"
+  },
+  {
+    "id": "taylor-s-university-phd-in-law--research--6",
+    "university": "Taylor's University",
+    "level": "PHD PROGRAMS",
+    "name": "PhD in Law (Research)",
+    "duration": "3 years",
+    "fees": "RM68,944"
+  },
+  {
+    "id": "taylor-s-university-phd--prior-publication-track--7",
+    "university": "Taylor's University",
+    "level": "PHD PROGRAMS",
+    "name": "PhD (Prior Publication track)",
+    "duration": "-",
+    "fees": "RM49,562"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-foundation-in-arts-1",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "CENTRE FOR FOUNDATION STUDIES (CFS)",
+    "name": "Foundation in Arts",
+    "duration": "N/A",
+    "fees": "RM 29,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-diploma-in-management-1",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "BANK RAKYAT SCHOOL OF BUSINESS (BRSBITE)",
+    "name": "Diploma in Management",
+    "duration": "N/A",
+    "fees": "RM 47,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-diploma-in-information-technology-2",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "BANK RAKYAT SCHOOL OF BUSINESS (BRSBITE)",
+    "name": "Diploma in Information Technology",
+    "duration": "N/A",
+    "fees": "RM 47,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-management--honours--3",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "BANK RAKYAT SCHOOL OF BUSINESS (BRSBITE)",
+    "name": "Bachelor of Management (Honours)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-business-management--entrepreneurship---honours--4",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "BANK RAKYAT SCHOOL OF BUSINESS (BRSBITE)",
+    "name": "Bachelor of Business Management (Entrepreneurship) (Honours)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-business-administration--islamic-banking---finance---honours--5",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "BANK RAKYAT SCHOOL OF BUSINESS (BRSBITE)",
+    "name": "Bachelor of Business Administration (Islamic Banking & Finance) (Honours)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-business-administration--honours--6",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "BANK RAKYAT SCHOOL OF BUSINESS (BRSBITE)",
+    "name": "Bachelor of Business Administration (Honours)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-information-technology--honours--7",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "BANK RAKYAT SCHOOL OF BUSINESS (BRSBITE)",
+    "name": "Bachelor of Information Technology (Honours)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-diploma-in-accounting-1",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF ACCOUNTING & TAXATION (SAT)",
+    "name": "Diploma in Accounting",
+    "duration": "N/A",
+    "fees": "RM 47,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-accounting--honours--2",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF ACCOUNTING & TAXATION (SAT)",
+    "name": "Bachelor of Accounting (Honours)",
+    "duration": "N/A",
+    "fees": "RM 130,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-in-accounting-3",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF ACCOUNTING & TAXATION (SAT)",
+    "name": "Bachelor in Accounting",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-taxation--honours--4",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF ACCOUNTING & TAXATION (SAT)",
+    "name": "Bachelor of Taxation (Honours)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-diploma-in-social-work-1",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF GOVERNMENT (TASSGPS)",
+    "name": "Diploma in Social Work",
+    "duration": "N/A",
+    "fees": "RM 47,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-arts-in-public-management-2",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF GOVERNMENT (TASSGPS)",
+    "name": "Bachelor of Arts in Public Management",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-economics-3",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF GOVERNMENT (TASSGPS)",
+    "name": "Bachelor of Economics",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-in-public-management-1",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master in Public Management",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-in-strategic-human-resource-management-2",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master in Strategic Human Resource Management",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-of-philosophy-3",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master of Philosophy",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-of-public-policy-4",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master of Public Policy",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-of-business-administration-5",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master of Business Administration",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-of-business-administration--online--6",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master of Business Administration (Online)",
+    "duration": "N/A",
+    "fees": "RM 16,400"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-in-management-7",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master in Management",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-of-philosophy--mphil----doctor-of-philosophy-8",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master of Philosophy (MPhil) + Doctor of Philosophy",
+    "duration": "N/A",
+    "fees": "RM 58,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-of-education--tesl--9",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master of Education (TESL)",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-in-early-childhood-education-10",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master in Early Childhood Education",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-master-of-education-11",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Master of Education",
+    "duration": "N/A",
+    "fees": "RM 55,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-doctor-of-philosophy--phd--12",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Doctor of Philosophy (PhD)",
+    "duration": "N/A",
+    "fees": "RM 62,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-doctor-of-philosophy--phd---online--13",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Doctor of Philosophy (PhD) (Online)",
+    "duration": "N/A",
+    "fees": "RM 25,500"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-doctor-of-philosophy-in-education-14",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "TUN RAZAK GRADUATE SCHOOL (TRGS)",
+    "name": "Doctor of Philosophy in Education",
+    "duration": "N/A",
+    "fees": "RM 62,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-diploma-in-psychology-1",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF EDUCATION & HUMANITIES (SEH)",
+    "name": "Diploma in Psychology",
+    "duration": "N/A",
+    "fees": "RM 47,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-diploma-in-early-childhood-education-2",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF EDUCATION & HUMANITIES (SEH)",
+    "name": "Diploma in Early Childhood Education",
+    "duration": "N/A",
+    "fees": "RM 47,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-education--honours--3",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF EDUCATION & HUMANITIES (SEH)",
+    "name": "Bachelor of Education (Honours)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-education--early-childhood-education--4",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF EDUCATION & HUMANITIES (SEH)",
+    "name": "Bachelor of Education (Early Childhood Education)",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-bachelor-of-psychology-5",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF EDUCATION & HUMANITIES (SEH)",
+    "name": "Bachelor of Psychology",
+    "duration": "N/A",
+    "fees": "RM 70,000"
+  },
+  {
+    "id": "universiti-tun-abdul-razak-post-graduate-diploma-education--odl--6",
+    "university": "Universiti Tun Abdul Razak",
+    "level": "SCHOOL OF EDUCATION & HUMANITIES (SEH)",
+    "name": "Post Graduate Diploma Education (ODL)",
+    "duration": "N/A",
+    "fees": "RM 8,500"
+  }
+]

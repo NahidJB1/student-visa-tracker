@@ -12,7 +12,7 @@ let universitiesCache = null;
 const loadUniversities = () => {
   if (!universitiesCache) {
     try {
-      const dataPath = path.join(__dirname, '../data/universities-data.json');
+      const dataPath = path.join(__dirname, '../universities.json');
       const rawData = fs.readFileSync(dataPath, 'utf-8');
       universitiesCache = JSON.parse(rawData);
     } catch (err) {
