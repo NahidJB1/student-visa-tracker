@@ -3,6 +3,7 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
 export async function apiRequest(endpoint, options = {}) {
   const token = typeof window !== 'undefined' ? localStorage.getItem('svt_token') : null;
   const config = {
+    cache: 'no-store', // Prevent aggressive Next.js/Browser caching
     headers: {
       'Content-Type': 'application/json',
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
