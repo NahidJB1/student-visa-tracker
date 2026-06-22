@@ -51,8 +51,12 @@ export const api = {
     }),
 
   // Students
-  getStudents: (status) =>
-    apiRequest(`/students${status ? `?status=${encodeURIComponent(status)}` : ''}`),
+  getStudents: ({ status, archived } = {}) => {
+    const params = new URLSearchParams();
+    if (status) params.append('status', status);
+    if (archived !== undefined) params.append('archived', archived);
+    return apiRequest(`/students?${params.toString()}`);
+  },
   addStudent: (data) =>
     apiRequest('/students', {
       method: 'POST',
@@ -87,4 +91,13 @@ export const api = {
 
   // Admin
   getUsers: () => apiRequest('/admin/users'),
+
+  // Notes
+  getNotes: () => apiRequest('/notes'),
+  createNote: (data) => apiRequest('/notes', { method: 'POST', body: JSON.stringify(data) }),
+  updateNote: (id, data) => apiRequest(`/notes/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
+  deleteNote: (id) => apiRequest(`/notes/${id}`, { method: 'DELETE' }),
+
+  // Universities
+  searchUniversities: (query) => apiRequest(`/universities/search?q=${encodeURIComponent(query)}`),
 };

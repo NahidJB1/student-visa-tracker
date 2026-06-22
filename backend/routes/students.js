@@ -28,12 +28,12 @@ const ALLOWED_STATUSES = [
 // ---------------------------------------------------------------------------
 router.get('/', async (req, res) => {
   try {
-    const { status } = req.query;
+    const { status, archived } = req.query;
 
     let sql = `
       SELECT
         s.id, s.user_id, s.name, s.passport_number,
-        s.institute_name, s.course_program, s.processing_status,
+        s.institute_name, s.course_program, s.processing_status, s.emgs_hold_remark,
         s.created_at, s.updated_at,
         f.id            AS financial_id,
         f.referrer_name,
@@ -51,6 +51,10 @@ router.get('/', async (req, res) => {
     if (status) {
       sql += ' AND s.processing_status = $2';
       params.push(status);
+    } else if (archived === 'true') {
+      sql += " AND s.processing_status IN ('Visa Rejected', 'Flight done')";
+    } else if (archived === 'false') {
+      sql += " AND s.processing_status NOT IN ('Visa Rejected', 'Flight done')";
     }
 
     sql += ' ORDER BY s.created_at DESC';

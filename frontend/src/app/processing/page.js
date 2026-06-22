@@ -38,7 +38,7 @@ function ProcessingContent() {
   const fetchStudents = useCallback(async () => {
     setLoading(true);
     try {
-      const data = await api.getStudents(activeFilter || null);
+      const data = await api.getStudents({ status: activeFilter || null, archived: false });
       setStudents(data.students || data || []);
     } catch (err) {
       console.error('Failed to fetch students:', err);

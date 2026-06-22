@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
@@ -8,80 +7,29 @@ import { useAuth } from '@/context/AuthContext';
 export default function Navbar() {
   const { user, logout, isAdmin } = useAuth();
   const pathname = usePathname();
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  const navLinks = [
-    { href: '/dashboard', label: 'Dashboard', icon: '📊' },
-    { href: '/processing', label: 'Processing', icon: '📋' },
-    { href: '/settings', label: 'Settings', icon: '⚙️' },
-  ];
-
-  if (isAdmin) {
-    navLinks.push({ href: '/admin', label: 'Admin', icon: '🛡️' });
-  }
 
   return (
-    <nav className="navbar">
-      <Link href="/dashboard" className="navbar-brand">
-        <span>SVT</span>
-      </Link>
-
-      <div className="navbar-nav">
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={`navbar-link ${pathname === link.href ? 'active' : ''}`}
-          >
-            <span>{link.icon}</span>
-            {link.label}
+    <nav className="navbar" style={{ padding: '0 24px', justifyContent: 'space-between' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <Link href="/dashboard" className="navbar-brand">
+          <span>SVT</span>
+        </Link>
+        {pathname !== '/dashboard' && (
+          <Link href="/dashboard" className="btn-icon" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '6px 12px', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--text-primary)', textDecoration: 'none' }}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>Home</span>
           </Link>
-        ))}
+        )}
       </div>
 
-      <div className="navbar-user">
-        <div className="navbar-user-info">
-          <span className="navbar-user-name">{user?.name || 'User'}</span>
+      <div className="navbar-user" style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
+        <div className="navbar-user-info" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span className="navbar-user-name" style={{ color: 'var(--text-primary)', fontWeight: 500 }}>{user?.name || 'User'}</span>
           {isAdmin && <span className="navbar-role-badge">Admin</span>}
         </div>
-        <button className="navbar-logout" onClick={logout}>
-          <span>↪</span> Logout
+        <button className="navbar-logout" onClick={logout} style={{ marginLeft: '16px' }}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
         </button>
-      </div>
-
-      <button
-        className="navbar-hamburger"
-        onClick={() => setMobileOpen(!mobileOpen)}
-        aria-label="Toggle menu"
-      >
-        <span />
-        <span />
-        <span />
-      </button>
-
-      <div className={`navbar-mobile-menu ${mobileOpen ? 'open' : ''}`}>
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={`navbar-link ${pathname === link.href ? 'active' : ''}`}
-            onClick={() => setMobileOpen(false)}
-          >
-            <span>{link.icon}</span>
-            {link.label}
-          </Link>
-        ))}
-        <div style={{ padding: '12px 16px', borderTop: '1px solid var(--border)', marginTop: '8px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-            <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-primary)' }}>
-              {user?.name || 'User'}
-            </span>
-            {isAdmin && <span className="navbar-role-badge">Admin</span>}
-          </div>
-          <button className="navbar-logout" onClick={logout} style={{ width: '100%', justifyContent: 'center' }}>
-            <span>↪</span> Logout
-          </button>
-        </div>
       </div>
     </nav>
   );

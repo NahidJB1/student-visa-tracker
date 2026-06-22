@@ -1603,3 +1603,242 @@ select.input-field {
     max-width: 1600px;
   }
 }
+
+/* ==========================================================================
+   Notes Component Styles
+   ========================================================================== */
+.note-creator-wrapper {
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+}
+
+.note-creator {
+  padding: 12px 16px;
+  cursor: text;
+  transition: all 0.2s ease;
+}
+
+.note-creator.active {
+  padding: 16px;
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-light);
+}
+
+.note-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  resize: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.note-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.note-title-input {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.note-content-input {
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 24px;
+}
+
+.note-creator-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.color-picker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.color-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+.color-btn.selected {
+  border-color: var(--text-primary);
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.note-card {
+  padding: 16px;
+  position: relative;
+  cursor: pointer;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border-radius: var(--radius-md);
+}
+
+.note-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.note-content {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.note-delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.note-card:hover .note-delete-btn {
+  opacity: 1;
+}
+
+.note-delete-btn:hover {
+  background: var(--error);
+}
+
+.note-modal {
+  width: 100%;
+  max-width: 600px;
+  background: var(--surface);
+}
+
+/* ==========================================================================
+   App Grid (Launchpad) Styles
+   ========================================================================== */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.app-grid-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.app-grid-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  background: var(--surface-hover);
+  border-color: var(--border-light);
+}
+
+.app-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.app-grid-item:hover .app-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.app-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.app-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Mobile optimizations for App Grid */
+@media (max-width: 768px) {
+  .app-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0 12px;
+  }
+  
+  .app-grid-item {
+    padding: 16px 8px;
+    border-radius: var(--radius-md);
+  }
+
+  .app-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 8px;
+  }
+
+  .app-name {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+
+  .app-desc {
+    display: none; /* Hide descriptions on mobile to keep the grid clean */
+  }
+}
+@media (max-width: 375px) {
+  .app-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

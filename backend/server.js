@@ -12,6 +12,8 @@ const studentRoutes = require('./routes/students');
 const financialRoutes = require('./routes/financials');
 const dashboardRoutes = require('./routes/dashboard');
 const adminRoutes = require('./routes/admin');
+const notesRoutes = require('./routes/notes');
+const universitiesRoutes = require('./routes/universities');
 
 const app = express();
 
@@ -30,6 +32,8 @@ app.use('/api/students', studentRoutes);
 app.use('/api/students', financialRoutes);   // mounts /:id/financials under /api/students
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/notes', notesRoutes);
+app.use('/api/universities', universitiesRoutes);
 
 // Health check
 app.get('/api/health', (_req, res) => {
