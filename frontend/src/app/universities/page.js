@@ -25,6 +25,11 @@ function UniversitiesPanel() {
   }, [user, loading, router]);
 
   const handleSearch = useCallback(async (query) => {
+    if (!query.trim()) {
+      setPrograms([]);
+      return;
+    }
+    
     setIsSearching(true);
     try {
       const data = await api.searchUniversities(query);
@@ -37,13 +42,6 @@ function UniversitiesPanel() {
       setIsSearching(false);
     }
   }, [addToast]);
-
-  // Initial load
-  useEffect(() => {
-    if (user) {
-      handleSearch('');
-    }
-  }, [user, handleSearch]);
 
   // Debounced search
   useEffect(() => {
@@ -120,8 +118,17 @@ function UniversitiesPanel() {
         <div className="skeleton skeleton-chart" />
       ) : programs.length === 0 ? (
         <div className="glass-card" style={{ padding: '48px', textAlign: 'center', color: 'var(--text-tertiary)' }}>
-          <h3>No programs found</h3>
-          <p>Try using different keywords or check spelling.</p>
+          {searchQuery.trim() ? (
+            <>
+              <h3>No programs found</h3>
+              <p>Try using different keywords or check spelling.</p>
+            </>
+          ) : (
+            <>
+              <h3>Search for Programs</h3>
+              <p>Type a subject, university name, or level (e.g. IT, SEGi, Diploma) to begin.</p>
+            </>
+          )}
         </div>
       ) : (
         <>

@@ -28,7 +28,17 @@ for (const file of htmlFiles) {
 
   for (const block of levelBlocks) {
     const levelMatch = block.match(/^(.*?)<\/button>/);
-    let level = levelMatch ? levelMatch[1].trim() : 'Unknown Level';
+    let rawLevel = levelMatch ? levelMatch[1].trim() : 'Unknown Level';
+    let level = 'Other';
+    const lowerLevel = rawLevel.toLowerCase();
+    
+    if (lowerLevel.includes('foundation')) level = 'Foundation';
+    else if (lowerLevel.includes('diploma')) level = 'Diploma';
+    else if (lowerLevel.includes('bachelor') || lowerLevel.includes('degree')) level = 'Bachelor';
+    else if (lowerLevel.includes('master')) level = "Master's";
+    else if (lowerLevel.includes('phd') || lowerLevel.includes('doctor')) level = 'PhD';
+    else if (lowerLevel.includes('certificate')) level = 'Certificate';
+    else if (lowerLevel.includes('professional')) level = 'Professional';
 
     const tableMatch = block.match(/<table[\s\S]*?>([\s\S]*?)<\/table>/i);
     if (!tableMatch) continue;
