@@ -3838,5 +3838,357 @@
     "name": "Post Graduate Diploma Education (ODL)",
     "duration": "N/A",
     "fees": "RM 8,500"
+  },
+  {
+    "id": "alfa-international-mba-in-oil-and-gas-management-(-0",
+    "university": "ALFA International",
+    "level": "Master's",
+    "name": "MBA in Oil and Gas Management (Coursework)",
+    "duration": "1 to 2 years",
+    "fees": "33,500"
+  },
+  {
+    "id": "alfa-international-master-of-music-1",
+    "university": "ALFA International",
+    "level": "Master's",
+    "name": "Master of Music",
+    "duration": "3 years",
+    "fees": "40,000"
+  },
+  {
+    "id": "alfa-international-master-of-mechanical-engineerin-2",
+    "university": "ALFA International",
+    "level": "Master's",
+    "name": "Master of Mechanical Engineering (Coursework)",
+    "duration": "1 to 2 years",
+    "fees": "31,500"
+  },
+  {
+    "id": "bac-education-group-revised-ba-(hons)-accounting-&-3",
+    "university": "BAC Education Group Revised",
+    "level": "Other",
+    "name": "BA (Hons) Accounting & Finance",
+    "duration": "3",
+    "fees": "52,150"
+  },
+  {
+    "id": "bac-education-group-revised-bachelor-of-communicat-4",
+    "university": "BAC Education Group Revised",
+    "level": "Bachelor",
+    "name": "Bachelor of Communication (Hons) Branding & Digital Marketing",
+    "duration": "3",
+    "fees": "52,150"
+  },
+  {
+    "id": "bac-education-group-revised-bachelor-of-education--5",
+    "university": "BAC Education Group Revised",
+    "level": "Bachelor",
+    "name": "Bachelor of Education (Early Childhood) with Honors",
+    "duration": "3",
+    "fees": "52,150"
+  },
+  {
+    "id": "bac-education-group-revised-bachelor-in-business-a-6",
+    "university": "BAC Education Group Revised",
+    "level": "Bachelor",
+    "name": "Bachelor in Business Administration (Hons)",
+    "duration": "3",
+    "fees": "52,150"
+  },
+  {
+    "id": "bac-education-group-revised-master-in-computing-(b-7",
+    "university": "BAC Education Group Revised",
+    "level": "Master's",
+    "name": "Master in Computing (By research)",
+    "duration": "N/A",
+    "fees": "24,950"
+  },
+  {
+    "id": "bac-education-group-revised-master-of-science-in-e-8",
+    "university": "BAC Education Group Revised",
+    "level": "Master's",
+    "name": "Master of Science in Engineering (By research)",
+    "duration": "N/A",
+    "fees": "24,950"
+  },
+  {
+    "id": "bac-education-group-revised-doctor-of-philosophy-(-9",
+    "university": "BAC Education Group Revised",
+    "level": "PhD",
+    "name": "Doctor of Philosophy (Computing)",
+    "duration": "N/A",
+    "fees": "33,950"
+  },
+  {
+    "id": "bac-education-group-revised-doctor-of-philosophy-i-10",
+    "university": "BAC Education Group Revised",
+    "level": "PhD",
+    "name": "Doctor of Philosophy in Engineering",
+    "duration": "N/A",
+    "fees": "33,950"
+  },
+  {
+    "id": "bac-education-group-revised-doctor-of-philosophy-i-11",
+    "university": "BAC Education Group Revised",
+    "level": "PhD",
+    "name": "Doctor of Philosophy in Business Management",
+    "duration": "N/A",
+    "fees": "33,950"
+  },
+  {
+    "id": "lsbf-tuition-certificate-in-information-technology-12",
+    "university": "LSBF Tuition",
+    "level": "Certificate",
+    "name": "Certificate in Information Technology",
+    "duration": "RM 12,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-certificate-in-business-13",
+    "university": "LSBF Tuition",
+    "level": "Certificate",
+    "name": "Certificate in Business",
+    "duration": "RM 12,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-certificate-in-english-14",
+    "university": "LSBF Tuition",
+    "level": "Certificate",
+    "name": "Certificate in English",
+    "duration": "RM 12,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-foundation-in-science-15",
+    "university": "LSBF Tuition",
+    "level": "Foundation",
+    "name": "Foundation in Science",
+    "duration": "RM 12,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-foundation-in-arts-16",
+    "university": "LSBF Tuition",
+    "level": "Foundation",
+    "name": "Foundation in Arts",
+    "duration": "RM 12,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-hotel-management-17",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Hotel Management",
+    "duration": "RM 10,000",
+    "fees": "RM 4,000"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-entrepreneurship-18",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Entrepreneurship",
+    "duration": "RM 10,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-computer-science-19",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Computer Science",
+    "duration": "RM 10,000",
+    "fees": "RM 4,000"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-psychology-20",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Psychology",
+    "duration": "RM 10,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-occupational-safety-and-he-21",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Occupational Safety and Health",
+    "duration": "RM 10,000",
+    "fees": "RM 4,000"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-accounting-22",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Accounting",
+    "duration": "RM 10,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-human-resource-management-23",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Human Resource Management",
+    "duration": "RM 10,000",
+    "fees": "0"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-business-administration-24",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Business Administration",
+    "duration": "RM 10,000",
+    "fees": "RM 4,000"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-digital-marketing-25",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Digital Marketing",
+    "duration": "RM 10,000",
+    "fees": "RM 4,000"
+  },
+  {
+    "id": "lsbf-tuition-diploma-in-logistics-and-supply-chain-26",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Diploma in Logistics and Supply Chain Management",
+    "duration": "RM 10,000",
+    "fees": "RM 4,000"
+  },
+  {
+    "id": "lsbf-tuition-collaboration-with-university-of-gree-27",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "Collaboration with University of Greenwich (UK)",
+    "duration": "",
+    "fees": ""
+  },
+  {
+    "id": "lsbf-tuition-ba-(hons)-in-human-resource-managemen-28",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BA (Hons) in Human Resource Management and Development",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-bsc-(hons)-in-finance-and-investment--29",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BSc (Hons) in Finance and Investment Banking",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-ba-(hons)-in-international-business-30",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BA (Hons) in International Business",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-ba-(hons)-in-international-touurism-a-31",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BA (Hons) in International Touurism and Hospitality Management",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-bsc-(hons)-in-computing-(data-science-32",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BSc (Hons) in Computing (Data Science)",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-(3+0)-in-collaboration-with-universit-33",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "(3+0) in collaboration with University of Suffolk (UK)",
+    "duration": "",
+    "fees": ""
+  },
+  {
+    "id": "lsbf-tuition-bsc-(hons)-computer-science-34",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BSc (Hons) Computer Science",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-bsc-(hons)-computer-science-(web-&-mo-35",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BSc (Hons) Computer Science (Web & Mobile Development)",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-bsc-(hons)-computer-science-(cyber-se-36",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BSc (Hons) Computer Science (Cyber Security)",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-bsc-(hons)-computer-science-(artifici-37",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BSc (Hons) Computer Science (Artificial Intelligence)",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-bsc-(hons)-in-psychology-38",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BSc (Hons) in Psychology",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-ba-(hons)-in-business-management-39",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "BA (Hons) in Business Management",
+    "duration": "RM 15,000",
+    "fees": "RM 15,000"
+  },
+  {
+    "id": "lsbf-tuition-initial-payment-&-breakdown-for-1-yea-40",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "Initial Payment & Breakdown for 1 year for Diploma",
+    "duration": "Initial Payment & Breakdown for 1 year for Bachelor",
+    "fees": ""
+  },
+  {
+    "id": "lsbf-tuition-emgs-and-application-fees-(non-refund-41",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "Emgs and Application Fees (Non refundable)",
+    "duration": "Emgs and Application Fees (Non refundable)",
+    "fees": "RM 3,000"
+  },
+  {
+    "id": "lsbf-tuition-others-and-admin-fees-42",
+    "university": "LSBF Tuition",
+    "level": "Other",
+    "name": "Others and Admin Fees",
+    "duration": "Others and Admin Fees",
+    "fees": "RM 3,000"
+  },
+  {
+    "id": "lsbf-tuition-1st-year-total-cost-for-diploma-43",
+    "university": "LSBF Tuition",
+    "level": "Diploma",
+    "name": "1st Year Total Cost for Diploma",
+    "duration": "1st Year Total Cost for Bachelor",
+    "fees": "RM 21,000"
   }
 ]
