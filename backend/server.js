@@ -42,12 +42,41 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ error: 'An unexpected error occurred.' });
 });
 
+const { queryOne, runQuery } = require('./config/db');
+const bcrypt = require('bcryptjs');
+
 // ---------------------------------------------------------------------------
-// Start server (after DB initialization)
+// Auto-seed admin user
+// ---------------------------------------------------------------------------
+async function autoSeedAdmin() {
+  const { ADMIN_EMAIL, ADMIN_PASSWORD, ADMIN_NAME } = process.env;
+  if (!ADMIN_EMAIL || !ADMIN_PASSWORD || !ADMIN_NAME) {
+    console.warn('Skipping auto-seed: Missing admin environment variables.');
+    return;
+  }
+
+  try {
+    const existing = await queryOne('SELECT id FROM users WHERE email = $1', [ADMIN_EMAIL]);
+    if (!existing) {
+      const passwordHash = bcrypt.hashSync(ADMIN_PASSWORD, 12);
+      await runQuery(
+        'INSERT INTO users (name, email, password_hash, role) VALUES ($1, $2, $3, $4)',
+        [ADMIN_NAME, ADMIN_EMAIL, passwordHash, 'admin']
+      );
+      console.log(`Auto-seeded admin user: ${ADMIN_EMAIL}`);
+    }
+  } catch (err) {
+    console.error('Failed to auto-seed admin user:', err.message);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Start server (after DB initialization & seeding)
 // ---------------------------------------------------------------------------
 const PORT = process.env.PORT || 5000;
 
 initDb()
+  .then(() => autoSeedAdmin())
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server running on http://localhost:${PORT}`);
