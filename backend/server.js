@@ -17,7 +17,7 @@ const app = express();
 // ---------------------------------------------------------------------------
 // Middleware
 // ---------------------------------------------------------------------------
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors()); // Allow all origins for Vercel deployment
 app.use(express.json());
 app.use(morgan('dev'));
 
