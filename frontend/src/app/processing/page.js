@@ -146,9 +146,18 @@ function ProcessingContent() {
               </div>
             </div>
           ) : (
-            <StudentTable
-              students={students}
-              activeFilter={activeFilter}
+            <>
+              {(!students || students.length === 0) && (
+                <div className="glass-card" style={{ padding: 24, marginBottom: 24, color: 'var(--text-secondary)' }}>
+                  <h3>Debug Info (Please send this back to me):</h3>
+                  <pre style={{ overflowX: 'auto', fontSize: '0.8rem', background: '#000', padding: 12 }}>
+                    {JSON.stringify(students, null, 2) === '[]' ? 'Array is empty []' : JSON.stringify(students, null, 2)}
+                  </pre>
+                </div>
+              )}
+              <StudentTable
+                students={students}
+                activeFilter={activeFilter}
               onStatusChange={handleStatusChange}
               onFinancialsClick={handleFinancialsClick}
               onRefresh={handleRefresh}

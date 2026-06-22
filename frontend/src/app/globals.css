@@ -264,12 +264,12 @@ ul, ol {
 .animate-slide-out-right { animation: slideOutRight 300ms ease forwards; }
 
 /* ── Staggered Animation Delays ── */
-.delay-1 { animation-delay: 100ms; opacity: 0; }
-.delay-2 { animation-delay: 200ms; opacity: 0; }
-.delay-3 { animation-delay: 300ms; opacity: 0; }
-.delay-4 { animation-delay: 400ms; opacity: 0; }
-.delay-5 { animation-delay: 500ms; opacity: 0; }
-.delay-6 { animation-delay: 600ms; opacity: 0; }
+.delay-1 { animation-delay: 100ms; animation-fill-mode: both; }
+.delay-2 { animation-delay: 200ms; animation-fill-mode: both; }
+.delay-3 { animation-delay: 300ms; animation-fill-mode: both; }
+.delay-4 { animation-delay: 400ms; animation-fill-mode: both; }
+.delay-5 { animation-delay: 500ms; animation-fill-mode: both; }
+.delay-6 { animation-delay: 600ms; animation-fill-mode: both; }
 
 /* ── Buttons ── */
 .btn-primary {
