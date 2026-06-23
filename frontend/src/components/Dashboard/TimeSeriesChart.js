@@ -29,8 +29,8 @@ export default function TimeSeriesChart() {
 
   useEffect(() => {
     let cancelled = false;
-    async function fetchData() {
-      setLoading(true);
+    async function fetchData(silent = false) {
+      if (!silent) setLoading(true);
       try {
         const result = await api.getTimeline(period);
         if (!cancelled) {
@@ -40,11 +40,20 @@ export default function TimeSeriesChart() {
         console.error('Failed to fetch timeline:', err);
         if (!cancelled) setData([]);
       } finally {
-        if (!cancelled) setLoading(false);
+        if (!cancelled && !silent) setLoading(false);
       }
     }
     fetchData();
-    return () => { cancelled = true; };
+    
+    const intervalId = setInterval(() => fetchData(true), 30000);
+    const handleFocus = () => fetchData(true);
+    window.addEventListener('focus', handleFocus);
+    
+    return () => { 
+      cancelled = true; 
+      clearInterval(intervalId);
+      window.removeEventListener('focus', handleFocus);
+    };
   }, [period]);
 
   const periods = [

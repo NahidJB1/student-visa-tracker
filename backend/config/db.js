@@ -92,6 +92,12 @@ async function initDb() {
       ADD COLUMN IF NOT EXISTS emgs_hold_remark TEXT DEFAULT '';
     `);
 
+    // Migrate to support Note pinning
+    await pool.query(`
+      ALTER TABLE notes 
+      ADD COLUMN IF NOT EXISTS is_pinned BOOLEAN DEFAULT FALSE;
+    `);
+
     console.log('Database tables verified.');
 
     // ---------------------------------------------------------------------------

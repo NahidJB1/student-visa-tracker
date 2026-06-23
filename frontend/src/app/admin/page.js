@@ -7,6 +7,8 @@ import { api } from '@/lib/api';
 import Navbar from '@/components/Navbar';
 import { ToastProvider, useToast } from '@/components/Toast';
 
+import PasswordInput from '@/components/PasswordInput';
+
 function AdminPanel() {
   const { user, isAdmin, loading } = useAuth();
   const router = useRouter();
@@ -16,6 +18,12 @@ function AdminPanel() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', password: '', role: 'user' });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  // Reset Password State
+  const [resetModalOpen, setResetModalOpen] = useState(false);
+  const [resetUserId, setResetUserId] = useState(null);
+  const [resetPassword, setResetPassword] = useState('');
+  const [isResetting, setIsResetting] = useState(false);
 
   useEffect(() => {
     if (!loading && !isAdmin) {
@@ -54,6 +62,23 @@ function AdminPanel() {
     }
   };
 
+  const handleResetPassword = async (e) => {
+    e.preventDefault();
+    if (!resetUserId) return;
+    setIsResetting(true);
+    try {
+      await api.resetUserPassword(resetUserId, resetPassword);
+      addToast('Password reset successfully!', 'success');
+      setResetModalOpen(false);
+      setResetPassword('');
+      setResetUserId(null);
+    } catch (err) {
+      addToast(err.message || 'Failed to reset password', 'error');
+    } finally {
+      setIsResetting(false);
+    }
+  };
+
   if (loading || !isAdmin) return <div className="page-container"><div className="skeleton skeleton-chart" /></div>;
 
   return (
@@ -77,6 +102,7 @@ function AdminPanel() {
                 <th>Email</th>
                 <th>Role</th>
                 <th>Created At</th>
+                <th style={{ textAlign: 'right' }}>Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -90,11 +116,23 @@ function AdminPanel() {
                     </span>
                   </td>
                   <td>{new Date(u.created_at).toLocaleDateString()}</td>
+                  <td style={{ textAlign: 'right' }}>
+                    <button 
+                      className="secondary-button" 
+                      style={{ padding: '6px 12px', fontSize: '0.8rem' }}
+                      onClick={() => {
+                        setResetUserId(u.id);
+                        setResetModalOpen(true);
+                      }}
+                    >
+                      Reset Password
+                    </button>
+                  </td>
                 </tr>
               ))}
               {users.length === 0 && (
                 <tr>
-                  <td colSpan="4" style={{ textAlign: 'center', padding: '32px', color: 'var(--text-tertiary)' }}>
+                  <td colSpan="5" style={{ textAlign: 'center', padding: '32px', color: 'var(--text-tertiary)' }}>
                     No users found
                   </td>
                 </tr>
@@ -106,61 +144,76 @@ function AdminPanel() {
 
       {isModalOpen && (
         <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
-          <div className="modal-content animate-fade-in" onClick={e => e.stopPropagation()}>
-            <div className="modal-header">
-              <h2>Create New User</h2>
-              <button className="close-btn" onClick={() => setIsModalOpen(false)}>×</button>
-            </div>
+          <div className="modal-content glass-card" onClick={e => e.stopPropagation()}>
+            <h2 style={{ marginBottom: '24px', fontSize: '1.5rem', fontWeight: '600' }}>Add New User</h2>
             <form onSubmit={handleCreateUser}>
-              <div className="modal-body">
-                <div className="form-group">
-                  <label className="form-label">Name</label>
-                  <input
-                    type="text"
-                    className="form-input"
-                    value={formData.name}
-                    onChange={e => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="form-label">Email</label>
-                  <input
-                    type="email"
-                    className="form-input"
-                    value={formData.email}
-                    onChange={e => setFormData({ ...formData, email: e.target.value })}
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="form-label">Temporary Password</label>
-                  <input
-                    type="text"
-                    className="form-input"
-                    value={formData.password}
-                    onChange={e => setFormData({ ...formData, password: e.target.value })}
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="form-label">Role</label>
-                  <select
-                    className="form-input status-select"
-                    value={formData.role}
-                    onChange={e => setFormData({ ...formData, role: e.target.value })}
-                  >
-                    <option value="user">Agent / User</option>
-                    <option value="admin">Administrator</option>
-                  </select>
-                </div>
+              <div className="form-group">
+                <label className="form-label">Full Name</label>
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="e.g. John Doe"
+                  value={formData.name}
+                  onChange={e => setFormData({ ...formData, name: e.target.value })}
+                  required
+                />
               </div>
-              <div className="modal-footer">
-                <button type="button" className="secondary-button" onClick={() => setIsModalOpen(false)}>
-                  Cancel
-                </button>
+              <div className="form-group">
+                <label className="form-label">Email Address</label>
+                <input
+                  type="email"
+                  className="form-input"
+                  placeholder="name@example.com"
+                  value={formData.email}
+                  onChange={e => setFormData({ ...formData, email: e.target.value })}
+                  required
+                />
+              </div>
+              <PasswordInput
+                label="Password"
+                placeholder="Enter strong password"
+                value={formData.password}
+                onChange={e => setFormData({ ...formData, password: e.target.value })}
+                required
+              />
+              <div className="form-group">
+                <label className="form-label">Role</label>
+                <select
+                  className="form-input"
+                  value={formData.role}
+                  onChange={e => setFormData({ ...formData, role: e.target.value })}
+                >
+                  <option value="user">User</option>
+                  <option value="admin">Admin</option>
+                </select>
+              </div>
+              <div style={{ marginTop: '32px', display: 'flex', gap: '16px', justifyContent: 'flex-end' }}>
+                <button type="button" className="secondary-button" onClick={() => setIsModalOpen(false)}>Cancel</button>
                 <button type="submit" className="primary-button" disabled={isSubmitting}>
                   {isSubmitting ? 'Creating...' : 'Create User'}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {resetModalOpen && (
+        <div className="modal-overlay" onClick={() => setResetModalOpen(false)}>
+          <div className="modal-content glass-card" onClick={e => e.stopPropagation()}>
+            <h2 style={{ marginBottom: '24px', fontSize: '1.5rem', fontWeight: '600' }}>Reset User Password</h2>
+            <form onSubmit={handleResetPassword}>
+              <PasswordInput
+                label="New Password"
+                placeholder="Enter new password"
+                value={resetPassword}
+                onChange={e => setResetPassword(e.target.value)}
+                required
+              />
+              <div style={{ marginTop: '32px', display: 'flex', gap: '16px', justifyContent: 'flex-end' }}>
+                <button type="button" className="secondary-button" onClick={() => setResetModalOpen(false)}>Cancel</button>
+                <button type="submit" className="primary-button" disabled={isResetting}>
+                  {isResetting ? 'Resetting...' : 'Confirm Reset'}
                 </button>
               </div>
             </form>

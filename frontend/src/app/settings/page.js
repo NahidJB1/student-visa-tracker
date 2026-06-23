@@ -7,6 +7,8 @@ import { api } from '@/lib/api';
 import Navbar from '@/components/Navbar';
 import { ToastProvider, useToast } from '@/components/Toast';
 
+import PasswordInput from '@/components/PasswordInput';
+
 function SettingsPanel() {
   const { user, loading } = useAuth();
   const router = useRouter();
@@ -32,7 +34,6 @@ function SettingsPanel() {
     try {
       await api.updateProfile(profileData);
       addToast('Profile updated successfully!', 'success');
-      // Force reload to grab the fresh user object via JWT in AuthContext
       setTimeout(() => window.location.reload(), 1500);
     } catch (err) {
       addToast(err.message || 'Failed to update profile', 'error');
@@ -66,9 +67,29 @@ function SettingsPanel() {
         </div>
       </div>
 
-      <div className="dashboard-grid" style={{ marginTop: '24px' }}>
-        <div className="glass-card" style={{ padding: '24px' }}>
-          <h2 style={{ fontSize: '1.1rem', marginBottom: '16px' }}>Profile Details</h2>
+      <div className="dashboard-grid" style={{ marginTop: '32px', gap: '32px' }}>
+        <div className="glass-card animate-slide-up" style={{ padding: '32px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '24px' }}>
+            <div style={{
+              width: '64px',
+              height: '64px',
+              borderRadius: '32px',
+              background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-secondary))',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '1.5rem',
+              fontWeight: '700',
+              color: 'white'
+            }}>
+              {user.name.charAt(0).toUpperCase()}
+            </div>
+            <div>
+              <h2 style={{ fontSize: '1.2rem', margin: 0 }}>Profile Details</h2>
+              <p style={{ color: 'var(--text-tertiary)', margin: '4px 0 0 0', fontSize: '0.9rem' }}>Update your personal information</p>
+            </div>
+          </div>
+          
           <form onSubmit={handleUpdateProfile}>
             <div className="form-group">
               <label className="form-label">Full Name</label>
@@ -90,7 +111,7 @@ function SettingsPanel() {
                 required
               />
             </div>
-            <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'flex-end' }}>
+            <div style={{ marginTop: '32px', display: 'flex', justifyContent: 'flex-end' }}>
               <button type="submit" className="primary-button" disabled={isUpdatingProfile}>
                 {isUpdatingProfile ? 'Saving...' : 'Save Profile'}
               </button>
@@ -98,30 +119,27 @@ function SettingsPanel() {
           </form>
         </div>
 
-        <div className="glass-card" style={{ padding: '24px' }}>
-          <h2 style={{ fontSize: '1.1rem', marginBottom: '16px' }}>Change Password</h2>
+        <div className="glass-card animate-slide-up delay-1" style={{ padding: '32px' }}>
+          <div style={{ marginBottom: '24px' }}>
+            <h2 style={{ fontSize: '1.2rem', margin: 0 }}>Security</h2>
+            <p style={{ color: 'var(--text-tertiary)', margin: '4px 0 0 0', fontSize: '0.9rem' }}>Change your password</p>
+          </div>
           <form onSubmit={handleUpdatePassword}>
-            <div className="form-group">
-              <label className="form-label">Current Password</label>
-              <input
-                type="password"
-                className="form-input"
-                value={passwordData.currentPassword}
-                onChange={e => setPasswordData({ ...passwordData, currentPassword: e.target.value })}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label className="form-label">New Password</label>
-              <input
-                type="password"
-                className="form-input"
-                value={passwordData.newPassword}
-                onChange={e => setPasswordData({ ...passwordData, newPassword: e.target.value })}
-                required
-              />
-            </div>
-            <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'flex-end' }}>
+            <PasswordInput
+              label="Current Password"
+              placeholder="Enter current password"
+              value={passwordData.currentPassword}
+              onChange={e => setPasswordData({ ...passwordData, currentPassword: e.target.value })}
+              required
+            />
+            <PasswordInput
+              label="New Password"
+              placeholder="Enter new strong password"
+              value={passwordData.newPassword}
+              onChange={e => setPasswordData({ ...passwordData, newPassword: e.target.value })}
+              required
+            />
+            <div style={{ marginTop: '32px', display: 'flex', justifyContent: 'flex-end' }}>
               <button type="submit" className="primary-button" disabled={isUpdatingPassword}>
                 {isUpdatingPassword ? 'Updating...' : 'Update Password'}
               </button>

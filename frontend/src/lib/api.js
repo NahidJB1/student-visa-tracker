@@ -91,6 +91,7 @@ export const api = {
 
   // Admin
   getUsers: () => apiRequest('/admin/users'),
+  resetUserPassword: (userId, newPassword) => apiRequest(`/admin/users/${userId}/reset-password`, { method: 'POST', body: JSON.stringify({ newPassword }) }),
 
   // Notes
   getNotes: () => apiRequest('/notes'),

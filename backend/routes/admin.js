@@ -1,5 +1,6 @@
 const express = require('express');
-const { queryAll } = require('../config/db');
+const bcrypt = require('bcryptjs');
+const { queryAll, runQuery } = require('../config/db');
 const { authenticate, requireAdmin } = require('../middleware/auth');
 
 const router = express.Router();
@@ -20,6 +21,27 @@ router.get('/users', async (req, res) => {
     res.json({ users });
   } catch (err) {
     console.error('Admin get users error:', err.message);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
+// ---------------------------------------------------------------------------
+// POST /api/admin/users/:id/reset-password
+// ---------------------------------------------------------------------------
+router.post('/users/:id/reset-password', async (req, res) => {
+  const { id } = req.params;
+  const { newPassword } = req.body;
+  if (!newPassword || newPassword.length < 6) {
+    return res.status(400).json({ error: 'Password must be at least 6 characters long.' });
+  }
+
+  try {
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(newPassword, salt);
+    await runQuery('UPDATE users SET password = ? WHERE id = ?', [hashedPassword, id]);
+    res.json({ message: 'Password reset successfully.' });
+  } catch (err) {
+    console.error('Admin reset password error:', err.message);
     res.status(500).json({ error: 'Internal server error.' });
   }
 });

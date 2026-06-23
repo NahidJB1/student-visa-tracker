@@ -39,8 +39,8 @@ export default function EarningsSummary() {
 
   useEffect(() => {
     let cancelled = false;
-    async function fetchData() {
-      setLoading(true);
+    async function fetchData(silent = false) {
+      if (!silent) setLoading(true);
       try {
         const result = await api.getEarningsTimeline(period, currency);
         if (!cancelled) {
@@ -50,11 +50,20 @@ export default function EarningsSummary() {
         console.error('Failed to fetch earnings timeline:', err);
         if (!cancelled) setData([]);
       } finally {
-        if (!cancelled) setLoading(false);
+        if (!cancelled && !silent) setLoading(false);
       }
     }
     fetchData();
-    return () => { cancelled = true; };
+    
+    const intervalId = setInterval(() => fetchData(true), 30000);
+    const handleFocus = () => fetchData(true);
+    window.addEventListener('focus', handleFocus);
+    
+    return () => { 
+      cancelled = true; 
+      clearInterval(intervalId);
+      window.removeEventListener('focus', handleFocus);
+    };
   }, [period, currency]);
 
   const periods = [

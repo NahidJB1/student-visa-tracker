@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
+import PasswordInput from '@/components/PasswordInput';
 
 export default function LoginPage() {
   const { login, isAuthenticated, loading } = useAuth();
@@ -85,18 +86,14 @@ export default function LoginPage() {
             />
           </div>
 
-          <div className="form-group">
-            <label className="form-label" htmlFor="password">Password</label>
-            <input
-              id="password"
-              type="password"
-              className="input-field"
-              placeholder="••••••••"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              autoComplete="current-password"
-            />
-          </div>
+          <PasswordInput
+            label="Password"
+            className="input-field"
+            containerStyle={{ marginBottom: '24px' }}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
 
           <button
             type="submit"

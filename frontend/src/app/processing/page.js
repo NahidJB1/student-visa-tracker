@@ -35,21 +35,30 @@ function ProcessingContent() {
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const fetchStudents = useCallback(async () => {
-    setLoading(true);
+  const fetchStudents = useCallback(async (silent = false) => {
+    if (!silent) setLoading(true);
     try {
       const data = await api.getStudents({ status: activeFilter || null, archived: false });
       setStudents(data.students || data || []);
     } catch (err) {
       console.error('Failed to fetch students:', err);
-      addToast('Failed to load students', 'error');
+      if (!silent) addToast('Failed to load students', 'error');
     } finally {
-      setLoading(false);
+      if (!silent) setLoading(false);
     }
   }, [activeFilter, addToast]);
 
   useEffect(() => {
     fetchStudents();
+    
+    const intervalId = setInterval(() => fetchStudents(true), 30000);
+    const handleFocus = () => fetchStudents(true);
+    
+    window.addEventListener('focus', handleFocus);
+    return () => {
+      clearInterval(intervalId);
+      window.removeEventListener('focus', handleFocus);
+    };
   }, [fetchStudents]);
 
   const handleFilterChange = useCallback((status) => {

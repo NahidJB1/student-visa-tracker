@@ -9,7 +9,7 @@ router.use(authenticate);
 router.get('/', async (req, res) => {
   try {
     const notes = await queryAll(
-      'SELECT * FROM notes WHERE user_id = $1 ORDER BY updated_at DESC',
+      'SELECT * FROM notes WHERE user_id = $1 ORDER BY is_pinned DESC, updated_at DESC',
       [req.userId]
     );
     res.json({ notes });
@@ -22,10 +22,10 @@ router.get('/', async (req, res) => {
 // POST /api/notes
 router.post('/', async (req, res) => {
   try {
-    const { title, content, color } = req.body;
+    const { title, content, color, is_pinned } = req.body;
     const result = await runQuery(
-      'INSERT INTO notes (user_id, title, content, color) VALUES ($1, $2, $3, $4) RETURNING id',
-      [req.userId, title || '', content || '', color || 'default']
+      'INSERT INTO notes (user_id, title, content, color, is_pinned) VALUES ($1, $2, $3, $4, $5) RETURNING id',
+      [req.userId, title || '', content || '', color || 'default', is_pinned ? true : false]
     );
     const note = await queryOne('SELECT * FROM notes WHERE id = $1', [result.lastInsertRowid]);
     res.status(201).json({ note });
@@ -39,7 +39,7 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const { title, content, color } = req.body;
+    const { title, content, color, is_pinned } = req.body;
     
     const existing = await queryOne('SELECT id FROM notes WHERE id = $1 AND user_id = $2', [id, req.userId]);
     if (!existing) return res.status(404).json({ error: 'Note not found.' });
@@ -49,9 +49,10 @@ router.put('/:id', async (req, res) => {
        SET title = COALESCE($1, title), 
            content = COALESCE($2, content), 
            color = COALESCE($3, color), 
+           is_pinned = COALESCE($4, is_pinned),
            updated_at = CURRENT_TIMESTAMP 
-       WHERE id = $4`,
-      [title, content, color, id]
+       WHERE id = $5`,
+      [title, content, color, is_pinned, id]
     );
 
     const note = await queryOne('SELECT * FROM notes WHERE id = $1', [id]);
