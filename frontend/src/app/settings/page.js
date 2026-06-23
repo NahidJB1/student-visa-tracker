@@ -19,6 +19,9 @@ function SettingsPanel() {
   const [isUpdatingProfile, setIsUpdatingProfile] = useState(false);
   const [isUpdatingPassword, setIsUpdatingPassword] = useState(false);
 
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [isInstalled, setIsInstalled] = useState(false);
+
   useEffect(() => {
     if (!loading && !user) {
       router.push('/login');
@@ -27,6 +30,45 @@ function SettingsPanel() {
       setProfileData({ name: user.name || '', email: user.email || '' });
     }
   }, [user, loading, router]);
+
+  useEffect(() => {
+    const checkInstalled = () => {
+      if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
+        setIsInstalled(true);
+      }
+    };
+    checkInstalled();
+    
+    const handleAppInstalled = () => {
+      setIsInstalled(true);
+      setDeferredPrompt(null);
+    };
+    window.addEventListener('appinstalled', handleAppInstalled);
+
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      setIsInstalled(false);
+    };
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+    return () => {
+      window.removeEventListener('appinstalled', handleAppInstalled);
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    };
+  }, []);
+
+  const handleInstallClick = async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        setDeferredPrompt(null);
+      }
+    } else if (!isInstalled) {
+      addToast('To install on iOS: tap the Share icon and select "Add to Home Screen". On desktop: check the URL bar for an install icon.', 'info');
+    }
+  };
 
   const handleUpdateProfile = async (e) => {
     e.preventDefault();
@@ -59,7 +101,7 @@ function SettingsPanel() {
   if (loading || !user) return <div className="page-container"><div className="skeleton skeleton-chart" /></div>;
 
   return (
-    <div className="page-container">
+    <div className="page-container" style={{ paddingBottom: '100px' }}>
       <div className="processing-header">
         <div>
           <h1 className="page-title">Settings</h1>
@@ -145,6 +187,42 @@ function SettingsPanel() {
               </button>
             </div>
           </form>
+        </div>
+
+        <div className="glass-card animate-slide-up delay-2 full-width" style={{ padding: '32px' }}>
+          <div style={{ marginBottom: '24px' }}>
+            <h2 style={{ fontSize: '1.2rem', margin: 0 }}>App Installation</h2>
+            <p style={{ color: 'var(--text-tertiary)', margin: '4px 0 0 0', fontSize: '0.9rem' }}>Install SVT on your device</p>
+          </div>
+          
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', padding: '16px', background: 'var(--surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+            <div style={{
+              width: '48px',
+              height: '48px',
+              borderRadius: '12px',
+              background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-secondary))',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'white'
+            }}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+            <div style={{ flex: 1 }}>
+              <h3 style={{ margin: 0, fontSize: '1rem' }}>SVT App</h3>
+              <p style={{ margin: '4px 0 0', fontSize: '0.85rem', color: 'var(--text-tertiary)' }}>
+                {isInstalled ? 'App is currently installed on this device.' : 'Install for a better native experience.'}
+              </p>
+            </div>
+            <button 
+              className="primary-button" 
+              disabled={isInstalled}
+              onClick={handleInstallClick}
+              style={{ padding: '8px 16px', opacity: isInstalled ? 0.5 : 1, cursor: isInstalled ? 'default' : 'pointer' }}
+            >
+              {isInstalled ? 'Installed' : 'Install'}
+            </button>
+          </div>
         </div>
       </div>
     </div>
