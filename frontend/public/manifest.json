@@ -1,15 +1,16 @@
 {
   "name": "Student Visa Tracker",
-  "short_name": "Visa Tracker",
-  "description": "Manage student visa applications and financials.",
+  "short_name": "SVT",
+  "description": "Premium dashboard for tracking student visas",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0e1a",
-  "theme_color": "#6c5ce7",
+  "theme_color": "#0a0e1a",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/icon.svg",
-      "sizes": "any",
+      "sizes": "192x192 512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }

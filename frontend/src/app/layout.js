@@ -12,6 +12,11 @@ export const metadata = {
   title: 'SVT — Student Visa Tracker',
   description: 'Student Visa Processing & Financial Tracker — manage student applications, track visa status, and monitor earnings.',
   manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'SVT Tracker',
+  },
 };
 
 export const viewport = {
