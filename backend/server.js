@@ -24,6 +24,14 @@ app.use(cors()); // Allow all origins for Vercel deployment
 app.use(express.json());
 app.use(morgan('dev'));
 
+// Prevent caching for all API routes (Fixes PWA sync issues)
+app.use('/api', (req, res, next) => {
+  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.set('Pragma', 'no-cache');
+  res.set('Expires', '0');
+  next();
+});
+
 // ---------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------
