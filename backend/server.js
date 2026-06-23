@@ -84,16 +84,21 @@ async function autoSeedAdmin() {
   }
 }
 
+const { initEMGSCron } = require('./scripts/emgsSync');
+
 // ---------------------------------------------------------------------------
-// Start server (after DB initialization & seeding)
+// Start Server
 // ---------------------------------------------------------------------------
 const PORT = process.env.PORT || 5000;
 
+// Initialize database, cron jobs, then start server
 initDb()
   .then(() => autoSeedAdmin())
   .then(() => {
+    console.log('Database initialized and admin seeded.');
+    initEMGSCron();
     app.listen(PORT, () => {
-      console.log(`Server running on http://localhost:${PORT}`);
+      console.log(`Backend server running on http://localhost:${PORT}`);
     });
   })
   .catch((err) => {

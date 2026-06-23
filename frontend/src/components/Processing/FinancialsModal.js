@@ -182,7 +182,7 @@ export default function FinancialsModal({ student, onClose, onSuccess }) {
                       Currency: {form.currency}
                     </div>
                   </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                  <div className="form-row">
                     <div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Referrer Name</div>
                       <div style={{ fontWeight: 500 }}>{form.referrer_name || '—'}</div>

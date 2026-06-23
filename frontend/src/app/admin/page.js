@@ -79,6 +79,17 @@ function AdminPanel() {
     }
   };
 
+  const handleDeleteUser = async (id) => {
+    if (!window.confirm("Are you sure you want to delete this user? ALL of their students, notes, and financials will be permanently erased!")) return;
+    try {
+      await api.adminDeleteUser(id);
+      addToast('User deleted successfully.', 'success');
+      fetchUsers();
+    } catch (err) {
+      addToast(err.message || 'Failed to delete user', 'error');
+    }
+  };
+
   if (loading || !isAdmin) return <div className="page-container"><div className="skeleton skeleton-chart" /></div>;
 
   return (
@@ -116,7 +127,7 @@ function AdminPanel() {
                     </span>
                   </td>
                   <td>{new Date(u.created_at).toLocaleDateString()}</td>
-                  <td style={{ textAlign: 'right' }}>
+                  <td style={{ textAlign: 'right', display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
                     <button 
                       className="secondary-button" 
                       style={{ padding: '6px 12px', fontSize: '0.8rem' }}
@@ -127,6 +138,16 @@ function AdminPanel() {
                     >
                       Reset Password
                     </button>
+                    {user?.id !== u.id && (
+                      <button 
+                        className="btn-icon" 
+                        style={{ background: 'rgba(239, 68, 68, 0.1)', color: 'var(--error)', border: '1px solid rgba(239, 68, 68, 0.2)', padding: '6px 12px', borderRadius: 'var(--radius-md)', fontSize: '0.8rem', cursor: 'pointer' }}
+                        onClick={() => handleDeleteUser(u.id)}
+                        title="Delete User"
+                      >
+                        Delete
+                      </button>
+                    )}
                   </td>
                 </tr>
               ))}

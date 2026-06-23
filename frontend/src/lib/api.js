@@ -51,10 +51,11 @@ export const api = {
     }),
 
   // Students
-  getStudents: ({ status, archived } = {}) => {
+  getStudents: ({ status, archived, all } = {}) => {
     const params = new URLSearchParams();
     if (status) params.append('status', status);
     if (archived !== undefined) params.append('archived', archived);
+    if (all) params.append('all', all);
     return apiRequest(`/students?${params.toString()}`);
   },
   addStudent: (data) =>
@@ -101,4 +102,7 @@ export const api = {
 
   // Universities
   searchUniversities: (query) => apiRequest(`/universities/search?q=${encodeURIComponent(query)}`),
+
+  // Admin
+  adminDeleteUser: (id) => apiRequest(`/admin/users/${id}`, { method: 'DELETE' }),
 };

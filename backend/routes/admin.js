@@ -46,4 +46,23 @@ router.post('/users/:id/reset-password', async (req, res) => {
   }
 });
 
+// ---------------------------------------------------------------------------
+// DELETE /api/admin/users/:id
+// ---------------------------------------------------------------------------
+router.delete('/users/:id', async (req, res) => {
+  const { id } = req.params;
+  
+  if (parseInt(id) === req.user.id) {
+    return res.status(400).json({ error: 'You cannot delete your own account.' });
+  }
+
+  try {
+    await runQuery('DELETE FROM users WHERE id = $1', [id]);
+    res.json({ message: 'User deleted successfully.' });
+  } catch (err) {
+    console.error('Admin delete user error:', err.message);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
 module.exports = router;

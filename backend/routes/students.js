@@ -28,7 +28,9 @@ const ALLOWED_STATUSES = [
 // ---------------------------------------------------------------------------
 router.get('/', async (req, res) => {
   try {
-    const { status, archived } = req.query;
+    const { status, archived, all } = req.query;
+    
+    const isGodMode = all === 'true' && req.userRole === 'admin';
 
     let sql = `
       SELECT
@@ -41,15 +43,22 @@ router.get('/', async (req, res) => {
         f.university_payment,
         f.amount_from_student,
         f.extra_incomes,
-        f.currency
+        f.currency,
+        u.name          AS agent_name
       FROM students s
       LEFT JOIN financials f ON f.student_id = s.id
-      WHERE s.user_id = $1
+      LEFT JOIN users u ON s.user_id = u.id
+      WHERE 1=1
     `;
-    const params = [req.userId];
+    const params = [];
+
+    if (!isGodMode) {
+      sql += ` AND s.user_id = $${params.length + 1}`;
+      params.push(req.userId);
+    }
 
     if (status) {
-      sql += ' AND s.processing_status = $2';
+      sql += ` AND s.processing_status = $${params.length + 1}`;
       params.push(status);
     } else if (archived === 'true') {
       sql += " AND s.processing_status IN ('Visa Rejected', 'Flight done')";

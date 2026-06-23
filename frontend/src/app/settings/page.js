@@ -124,7 +124,7 @@ function SettingsPanel() {
               fontWeight: '700',
               color: 'white'
             }}>
-              {user.name.charAt(0).toUpperCase()}
+              {user?.name ? user.name.charAt(0).toUpperCase() : 'U'}
             </div>
             <div>
               <h2 style={{ fontSize: '1.2rem', margin: 0 }}>Profile Details</h2>

@@ -1109,6 +1109,22 @@ select.input-field {
   vertical-align: middle;
 }
 
+.student-table th:first-child,
+.student-table td:first-child {
+  position: sticky;
+  left: 0;
+  background: var(--bg-secondary);
+  z-index: 10;
+}
+
+.student-table th:first-child {
+  z-index: 11;
+}
+
+.student-table tbody tr:hover td:first-child {
+  background: var(--surface-hover);
+}
+
 .student-table tbody tr {
   transition: background var(--transition-fast);
   cursor: pointer;
